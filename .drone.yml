@@ -1,0 +1,156 @@
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  branch:
+    - main
+  event:
+    - push
+    - pull_request
+    - tag
+
+steps:
+  - name: install
+    image: node:18
+    commands:
+      - corepack enable
+      - pnpm install
+
+  - name: lint
+    image: node:18
+    commands:
+      - pnpm -w run lint
+    depends_on:
+      - install
+
+  - name: typecheck
+    image: node:18
+    commands:
+      - pnpm -w run typecheck
+    depends_on:
+      - install
+
+  - name: test
+    image: node:18
+    commands:
+      - pnpm -w run test
+    depends_on:
+      - install
+
+  - name: build
+    image: node:18
+    commands:
+      - pnpm -w run build
+    depends_on:
+      - lint
+      - typecheck
+      - test
+
+  - name: version
+    image: node:18
+    commands:
+      - pnpm install
+      - pnpm changeset version
+    depends_on:
+      - build
+    when:
+      event:
+        - push
+      branch:
+        - main
+
+  - name: publish
+    image: node:18
+    environment:
+      NPM_TOKEN:
+        from_secret: npm_token
+      GITHUB_TOKEN:
+        from_secret: github_token
+    commands:
+      - corepack enable
+      - pnpm install
+      - echo "//registry.npmjs.org/:_authToken=$${NPM_TOKEN}" > .npmrc
+      - pnpm changeset publish
+    depends_on:
+      - version
+    when:
+      event:
+        - push
+      branch:
+        - main
+
+  - name: release-tag
+    image: node:18
+    environment:
+      GITHUB_TOKEN:
+        from_secret: github_token
+    commands:
+      - pnpm install
+      - node scripts/release-tag.mjs
+    depends_on:
+      - publish
+    when:
+      event:
+        - push
+      branch:
+        - main
+
+---
+kind: pipeline
+type: docker
+name: tag-trigger
+
+trigger:
+  event:
+    - tag
+
+steps:
+  - name: install
+    image: node:18
+    commands:
+      - corepack enable
+      - pnpm install
+
+  - name: lint
+    image: node:18
+    commands:
+      - pnpm -w run lint
+    depends_on:
+      - install
+
+  - name: typecheck
+    image: node:18
+    commands:
+      - pnpm -w run typecheck
+    depends_on:
+      - install
+
+  - name: test
+    image: node:18
+    commands:
+      - pnpm -w run test
+    depends_on:
+      - install
+
+  - name: build
+    image: node:18
+    commands:
+      - pnpm -w run build
+    depends_on:
+      - lint
+      - typecheck
+      - test
+
+  - name: publish
+    image: node:18
+    environment:
+      NPM_TOKEN:
+        from_secret: npm_token
+    commands:
+      - corepack enable
+      - pnpm install
+      - echo "//registry.npmjs.org/:_authToken=$${NPM_TOKEN}" > .npmrc
+      - pnpm changeset publish
+    depends_on:
+      - build

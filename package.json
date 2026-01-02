@@ -1,0 +1,73 @@
+{
+  "name": "@fe-utils",
+  "private": true,
+  "version": "1.0.0",
+  "description": "一个轻量级的 JavaScript 工具库，提供常用的工具函数集合",
+  "scripts": {
+    "build": "pnpm --filter './packages/*' build",
+    "build:all": "pnpm --filter './packages/*' build && pnpm --filter '@fe-utils' build",
+    "build:iife": "node scripts/build-iife.mjs",
+    "build:cdn": "pnpm build && pnpm build:iife",
+    "test": "pnpm --filter './packages/*' test",
+    "typecheck": "pnpm --filter './packages/*' typecheck",
+    "type-tests": "pnpm --filter './packages/*' type-tests",
+    "lint": "eslint packages --ext .ts",
+    "clean": "rm -rf packages/*/dist",
+    "check-publish": "node scripts/check-publish.mjs",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "size": "node scripts/bundle-size.mjs",
+    "benchmark": "node benchmark/run-all.mjs"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "utils",
+    "javascript",
+    "typescript",
+    "array",
+    "string",
+    "object",
+    "function",
+    "date",
+    "dom",
+    "async"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/benchmark": "^2.1.5",
+    "@types/jest": "^30.0.0",
+    "@types/lodash": "^4.17.21",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.51.0",
+    "@typescript-eslint/parser": "^8.51.0",
+    "benchmark": "^2.1.4",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "lodash": "^4.17.21",
+    "picomatch": "latest",
+    "prettier": "^3.7.4",
+    "tsd": "^0.33.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.16"
+  }
+}

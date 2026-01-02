@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "."
+  },
+  "references": [
+    { "path": "./packages/array" },
+    { "path": "./packages/async" },
+    { "path": "./packages/core" },
+    { "path": "./packages/date" },
+    { "path": "./packages/dom" },
+    { "path": "./packages/function" },
+    { "path": "./packages/number" },
+    { "path": "./packages/object" },
+    { "path": "./packages/string" }
+  ],
+  "include": ["packages/*/src/**/*"],
+  "exclude": ["node_modules", "dist", "build", "**/*.test.ts", "**/*.test-d.ts"]
+}

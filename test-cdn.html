@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fe-utils CDN Test</title>
+</head>
+<body>
+  <h1>fe-utils CDN 测试</h1>
+  <div id="output"></div>
+
+  <script src="./packages/array/dist/index.global.js"></script>
+  <script src="./packages/function/dist/index.global.js"></script>
+  <script src="./packages/dom/dist/index.global.js"></script>
+  <script>
+    const output = document.getElementById('output');
+
+    output.innerHTML += '<h2>Array 工具测试</h2>';
+    const chunked = FeUtilsArray.chunk([1, 2, 3, 4, 5], 2);
+    output.innerHTML += `<p>chunk([1, 2, 3, 4, 5], 2): ${JSON.stringify(chunked)}</p>`;
+
+    const sorted = FeUtilsArray.sort([3, 1, 4, 1, 5]);
+    output.innerHTML += `<p>sort([3, 1, 4, 1, 5]): ${JSON.stringify(sorted)}</p>`;
+
+    output.innerHTML += '<h2>Function 工具测试</h2>';
+    const debouncedFn = FeUtilsFunction.debounce(() => {
+      console.log('Debounced function called!');
+    }, 1000);
+    output.innerHTML += '<p>debounce 函数已创建 (1秒延迟)</p>';
+
+    const memoizedFn = FeUtilsFunction.memoize((n) => {
+      console.log('Computing...');
+      return n * 2;
+    });
+    output.innerHTML += `<p>memoize(5): ${memoizedFn(5)} (首次计算)</p>`;
+    output.innerHTML += `<p>memoize(5): ${memoizedFn(5)} (从缓存读取)</p>`;
+
+    output.innerHTML += '<h2>DOM 工具测试</h2>';
+    const h1 = FeUtilsDom.$('h1');
+    output.innerHTML += `<p>$('h1').textContent: ${h1 ? h1.textContent : 'null'}</p>`;
+
+    const divs = FeUtilsDom.$$('div');
+    output.innerHTML += `<p>$$('div').length: ${divs.length}</p>`;
+  </script>
+</body>
+</html>
