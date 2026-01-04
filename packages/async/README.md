@@ -1,21 +1,21 @@
-# @lutlelk/async
+# @lutlelk-tools/async
 
 Async utility library for JavaScript/TypeScript with concurrency control, retry logic, and timeout handling.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/async
+npm install @lutlelk-tools/async
 # or
-pnpm add @lutlelk/async
+pnpm add @lutlelk-tools/async
 # or
-yarn add @lutlelk/async
+yarn add @lutlelk-tools/async
 ```
 
 ## Usage
 
 ```typescript
-import { createConcurrencyLimiter, retry, sleep, withTimeout } from '@lutlelk/async'
+import { createConcurrencyLimiter, retry, sleep, withTimeout } from '@lutlelk-tools/async'
 ```
 
 ## API

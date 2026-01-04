@@ -1,4 +1,4 @@
-import { isObject, isPlainObject, isEmpty } from '@lutlelk/core'
+import { isObject, isPlainObject, isEmpty } from '@lutlelk-tools/core'
 
 export { isObject, isPlainObject, isEmpty }
 

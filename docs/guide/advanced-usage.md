@@ -2,13 +2,13 @@
 
 ## 单文件按需导入
 
-lutlelk 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking。
+lutlelk-tools 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking。
 
 ### 基本用法
 
 ```ts
 // 直接导入单个函数
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -17,11 +17,11 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### 多个函数导入
 
 ```ts
-import chunk from '@lutlelk/array/chunk'
-import toCamelCase from '@lutlelk/string/toCamelCase'
-import deepClone from '@lutlelk/object/deepClone'
-import debounce from '@lutlelk/function/debounce'
-import isPrime from '@lutlelk/number/isPrime'
+import chunk from '@lutlelk-tools/array/chunk'
+import toCamelCase from '@lutlelk-tools/string/toCamelCase'
+import deepClone from '@lutlelk-tools/object/deepClone'
+import debounce from '@lutlelk-tools/function/debounce'
+import isPrime from '@lutlelk-tools/number/isPrime'
 ```
 
 ### 优势
@@ -36,7 +36,7 @@ import isPrime from '@lutlelk/number/isPrime'
 #### 常规导入
 
 ```ts
-import { chunk, flatten, uniq } from '@lutlelk/array'
+import { chunk, flatten, uniq } from '@lutlelk-tools/array'
 
 // 即使只使用 chunk，打包工具也可能包含整个包
 const result = chunk([1, 2, 3, 4, 5], 2)
@@ -45,7 +45,7 @@ const result = chunk([1, 2, 3, 4, 5], 2)
 #### 单文件按需导入
 
 ```ts
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 
 // 只打包 chunk 函数，不包含其他函数
 const result = chunk([1, 2, 3, 4, 5], 2)
@@ -53,74 +53,74 @@ const result = chunk([1, 2, 3, 4, 5], 2)
 
 ### 所有可用的单文件导入
 
-#### @lutlelk/array
+#### @lutlelk-tools/array
 
 ```ts
-import chunk from '@lutlelk/array/chunk'
-import flatten from '@lutlelk/array/flatten'
-import uniq from '@lutlelk/array/uniq'
-import groupBy from '@lutlelk/array/groupBy'
-import sortBy from '@lutlelk/array/sortBy'
-import find from '@lutlelk/array/find'
-import map from '@lutlelk/array/map'
-import filter from '@lutlelk/array/filter'
-import reduce from '@lutlelk/array/reduce'
+import chunk from '@lutlelk-tools/array/chunk'
+import flatten from '@lutlelk-tools/array/flatten'
+import uniq from '@lutlelk-tools/array/uniq'
+import groupBy from '@lutlelk-tools/array/groupBy'
+import sortBy from '@lutlelk-tools/array/sortBy'
+import find from '@lutlelk-tools/array/find'
+import map from '@lutlelk-tools/array/map'
+import filter from '@lutlelk-tools/array/filter'
+import reduce from '@lutlelk-tools/array/reduce'
 ```
 
-#### @lutlelk/string
+#### @lutlelk-tools/string
 
 ```ts
-import toCamelCase from '@lutlelk/string/toCamelCase'
-import toKebabCase from '@lutlelk/string/toKebabCase'
-import toSnakeCase from '@lutlelk/string/toSnakeCase'
-import slugify from '@lutlelk/string/slugify'
-import capitalize from '@lutlelk/string/capitalize'
-import truncate from '@lutlelk/string/truncate'
-import isEmail from '@lutlelk/string/isEmail'
-import isUrl from '@lutlelk/string/isUrl'
+import toCamelCase from '@lutlelk-tools/string/toCamelCase'
+import toKebabCase from '@lutlelk-tools/string/toKebabCase'
+import toSnakeCase from '@lutlelk-tools/string/toSnakeCase'
+import slugify from '@lutlelk-tools/string/slugify'
+import capitalize from '@lutlelk-tools/string/capitalize'
+import truncate from '@lutlelk-tools/string/truncate'
+import isEmail from '@lutlelk-tools/string/isEmail'
+import isUrl from '@lutlelk-tools/string/isUrl'
 ```
 
-#### @lutlelk/object
+#### @lutlelk-tools/object
 
 ```ts
-import get from '@lutlelk/object/get'
-import set from '@lutlelk/object/set'
-import pick from '@lutlelk/object/pick'
-import omit from '@lutlelk/object/omit'
-import merge from '@lutlelk/object/merge'
-import deepMerge from '@lutlelk/object/deepMerge'
-import clone from '@lutlelk/object/clone'
-import deepClone from '@lutlelk/object/deepClone'
+import get from '@lutlelk-tools/object/get'
+import set from '@lutlelk-tools/object/set'
+import pick from '@lutlelk-tools/object/pick'
+import omit from '@lutlelk-tools/object/omit'
+import merge from '@lutlelk-tools/object/merge'
+import deepMerge from '@lutlelk-tools/object/deepMerge'
+import clone from '@lutlelk-tools/object/clone'
+import deepClone from '@lutlelk-tools/object/deepClone'
 ```
 
-#### @lutlelk/function
+#### @lutlelk-tools/function
 
 ```ts
-import debounce from '@lutlelk/function/debounce'
-import throttle from '@lutlelk/function/throttle'
-import memoize from '@lutlelk/function/memoize'
-import once from '@lutlelk/function/once'
-import curry from '@lutlelk/function/curry'
-import partial from '@lutlelk/function/partial'
-import compose from '@lutlelk/function/compose'
+import debounce from '@lutlelk-tools/function/debounce'
+import throttle from '@lutlelk-tools/function/throttle'
+import memoize from '@lutlelk-tools/function/memoize'
+import once from '@lutlelk-tools/function/once'
+import curry from '@lutlelk-tools/function/curry'
+import partial from '@lutlelk-tools/function/partial'
+import compose from '@lutlelk-tools/function/compose'
 ```
 
-#### @lutlelk/number
+#### @lutlelk-tools/number
 
 ```ts
-import clamp from '@lutlelk/number/clamp'
-import random from '@lutlelk/number/random'
-import randomInt from '@lutlelk/number/randomInt'
-import range from '@lutlelk/number/range'
-import round from '@lutlelk/number/round'
-import format from '@lutlelk/number/format'
-import toCurrency from '@lutlelk/number/toCurrency'
-import toBytes from '@lutlelk/number/toBytes'
+import clamp from '@lutlelk-tools/number/clamp'
+import random from '@lutlelk-tools/number/random'
+import randomInt from '@lutlelk-tools/number/randomInt'
+import range from '@lutlelk-tools/number/range'
+import round from '@lutlelk-tools/number/round'
+import format from '@lutlelk-tools/number/format'
+import toCurrency from '@lutlelk-tools/number/toCurrency'
+import toBytes from '@lutlelk-tools/number/toBytes'
 ```
 
 ## CDN 使用
 
-lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直接使用。
+lutlelk-tools 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直接使用。
 
 ### 基本用法
 
@@ -128,12 +128,12 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 <!DOCTYPE html>
 <html>
 <head>
-  <title>lutlelk CDN Example</title>
+  <title>lutlelk-tools CDN Example</title>
 </head>
 <body>
   <!-- 引入需要的包 -->
-  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/string@latest/dist/string.iife.js"></script>
 
   <script>
     // 使用全局变量
@@ -152,37 +152,37 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 #### jsDelivr
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
 ```
 
 #### unpkg
 
 ```html
-<script src="https://unpkg.com/@lutlelk/array@latest/dist/array.iife.js"></script>
+<script src="https://unpkg.com/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
 ```
 
 ### 可用的 CDN 包
 
 | 包名 | jsDelivr | unpkg | 全局变量名 |
 |------|----------|-------|-----------|
-| @lutlelk/array | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js) | [链接](https://unpkg.com/@lutlelk/array@latest/dist/array.iife.js) | `window.feUtilsArray` |
-| @lutlelk/string | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js) | [链接](https://unpkg.com/@lutlelk/string@latest/dist/string.iife.js) | `window.feUtilsString` |
-| @lutlelk/object | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/object@latest/dist/object.iife.js) | [链接](https://unpkg.com/@lutlelk/object@latest/dist/object.iife.js) | `window.feUtilsObject` |
-| @lutlelk/function | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/function@latest/dist/function.iife.js) | [链接](https://unpkg.com/@lutlelk/function@latest/dist/function.iife.js) | `window.feUtilsFunction` |
-| @lutlelk/number | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/number@latest/dist/number.iife.js) | [链接](https://unpkg.com/@lutlelk/number@latest/dist/number.iife.js) | `window.feUtilsNumber` |
-| @lutlelk/date | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/date@latest/dist/date.iife.js) | [链接](https://unpkg.com/@lutlelk/date@latest/dist/date.iife.js) | `window.feUtilsDate` |
-| @lutlelk/dom | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/dom@latest/dist/dom.iife.js) | [链接](https://unpkg.com/@lutlelk/dom@latest/dist/dom.iife.js) | `window.feUtilsDom` |
-| @lutlelk/async | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/async@latest/dist/async.iife.js) | [链接](https://unpkg.com/@lutlelk/async@latest/dist/async.iife.js) | `window.feUtilsAsync` |
-| @lutlelk/core | [链接](https://cdn.jsdelivr.net/npm/@lutlelk/core@latest/dist/core.iife.js) | [链接](https://unpkg.com/@lutlelk/core@latest/dist/core.iife.js) | `window.feUtilsCore` |
+| @lutlelk-tools/array | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/array@latest/dist/array.iife.js) | `window.feUtilsArray` |
+| @lutlelk-tools/string | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/string@latest/dist/string.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/string@latest/dist/string.iife.js) | `window.feUtilsString` |
+| @lutlelk-tools/object | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/object@latest/dist/object.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/object@latest/dist/object.iife.js) | `window.feUtilsObject` |
+| @lutlelk-tools/function | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/function@latest/dist/function.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/function@latest/dist/function.iife.js) | `window.feUtilsFunction` |
+| @lutlelk-tools/number | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/number@latest/dist/number.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/number@latest/dist/number.iife.js) | `window.feUtilsNumber` |
+| @lutlelk-tools/date | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/date@latest/dist/date.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/date@latest/dist/date.iife.js) | `window.feUtilsDate` |
+| @lutlelk-tools/dom | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/dom@latest/dist/dom.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/dom@latest/dist/dom.iife.js) | `window.feUtilsDom` |
+| @lutlelk-tools/async | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/async@latest/dist/async.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/async@latest/dist/async.iife.js) | `window.feUtilsAsync` |
+| @lutlelk-tools/core | [链接](https://cdn.jsdelivr.net/npm/@lutlelk-tools/core@latest/dist/core.iife.js) | [链接](https://unpkg.com/@lutlelk-tools/core@latest/dist/core.iife.js) | `window.feUtilsCore` |
 
 ### 指定版本
 
 ```html
 <!-- 使用特定版本 -->
-<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@1.0.0/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@1.0.0/dist/array.iife.js"></script>
 
 <!-- 使用最新版本 -->
-<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
 ```
 
 ### 完整示例
@@ -193,7 +193,7 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lutlelk CDN 示例</title>
+  <title>lutlelk-tools CDN 示例</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -216,11 +216,11 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
   </style>
 </head>
 <body>
-  <h1>lutlelk CDN 使用示例</h1>
+  <h1>lutlelk-tools CDN 使用示例</h1>
 
   <div class="demo">
     <h2>数组操作</h2>
-    <script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
     <script>
       const chunked = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
       document.write('<div class="result">chunk([1,2,3,4,5], 2): ' + JSON.stringify(chunked) + '</div>')
@@ -229,7 +229,7 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 
   <div class="demo">
     <h2>字符串处理</h2>
-    <script src="https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/string@latest/dist/string.iife.js"></script>
     <script>
       const camelCase = window.feUtilsString.toCamelCase('hello-world')
       document.write('<div class="result">toCamelCase("hello-world"): ' + camelCase + '</div>')
@@ -241,7 +241,7 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 
   <div class="demo">
     <h2>对象操作</h2>
-    <script src="https://cdn.jsdelivr.net/npm/@lutlelk/object@latest/dist/object.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/object@latest/dist/object.iife.js"></script>
     <script>
       const obj = { name: 'John', age: 30, email: 'john@example.com' }
       const picked = window.feUtilsObject.pick(obj, ['name', 'age'])
@@ -254,7 +254,7 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 
   <div class="demo">
     <h2>函数工具</h2>
-    <script src="https://cdn.jsdelivr.net/npm/@lutlelk/function@latest/dist/function.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/function@latest/dist/function.iife.js"></script>
     <script>
       let count = 0
       const debouncedFn = window.feUtilsFunction.debounce(() => {
@@ -271,7 +271,7 @@ lutlelk 提供 IIFE 格式的构建文件，支持通过 CDN 在浏览器中直�
 
   <div class="demo">
     <h2>数字处理</h2>
-    <script src="https://cdn.jsdelivr.net/npm/@lutlelk/number@latest/dist/number.iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/number@latest/dist/number.iife.js"></script>
     <script>
       const randomNum = window.feUtilsNumber.randomInt(1, 100)
       document.write('<div class="result">randomInt(1, 100): ' + randomNum + '</div>')

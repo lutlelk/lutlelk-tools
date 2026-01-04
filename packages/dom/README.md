@@ -1,21 +1,21 @@
-# @lutlelk/dom
+# @lutlelk-tools/dom
 
 A lightweight DOM manipulation utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/dom
+npm install @lutlelk-tools/dom
 # or
-pnpm add @lutlelk/dom
+pnpm add @lutlelk-tools/dom
 # or
-yarn add @lutlelk/dom
+yarn add @lutlelk-tools/dom
 ```
 
 ## Usage
 
 ```typescript
-import { $, $$, addClass, on, createElement } from '@lutlelk/dom'
+import { $, $$, addClass, on, createElement } from '@lutlelk-tools/dom'
 ```
 
 ## API

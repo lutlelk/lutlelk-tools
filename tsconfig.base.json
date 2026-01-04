@@ -17,7 +17,7 @@
     "lib": ["ES2020", "DOM"],
     "baseUrl": ".",
     "paths": {
-      "@lutlelk/*": ["packages/*"]
+      "@lutlelk-tools/*": ["packages/*"]
     }
   },
   "include": [],

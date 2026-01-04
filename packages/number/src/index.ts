@@ -1,4 +1,4 @@
-import { isNumber } from '@lutlelk/core'
+import { isNumber } from '@lutlelk-tools/core'
 
 export { isNumber }
 

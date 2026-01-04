@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { memoize } from '@lutlelk/function'
+import { memoize } from '@lutlelk-tools/function'
 import { memoize as lodashMemoize } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -16,7 +16,7 @@ const memoizedFn = memoize(expensiveFn)
 const lodashMemoizedFn = lodashMemoize(expensiveFn)
 
 suite
-  .add('@lutlelk/function/memoize', function () {
+  .add('@lutlelk-tools/function/memoize', function () {
     memoizedFn(1000)
   })
   .add('lodash/memoize', function () {

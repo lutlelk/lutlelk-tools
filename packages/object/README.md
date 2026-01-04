@@ -1,15 +1,15 @@
-# @lutlelk/object
+# @lutlelk-tools/object
 
 A comprehensive object utility library for TypeScript/JavaScript with manipulation, query, transformation, and cloning capabilities.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/object
+npm install @lutlelk-tools/object
 # or
-pnpm add @lutlelk/object
+pnpm add @lutlelk-tools/object
 # or
-yarn add @lutlelk/object
+yarn add @lutlelk-tools/object
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @lutlelk/object
 ### Import the entire package
 
 ```typescript
-import { get, set, pick, omit, deepClone } from '@lutlelk/object'
+import { get, set, pick, omit, deepClone } from '@lutlelk-tools/object'
 
 const user = { name: 'John', age: 30, email: 'john@example.com' }
 get(user, 'name') // => "John"
@@ -26,7 +26,7 @@ get(user, 'name') // => "John"
 ### Import specific functions (tree-shaking supported)
 
 ```typescript
-import { deepMerge, pick, clone } from '@lutlelk/object'
+import { deepMerge, pick, clone } from '@lutlelk-tools/object'
 
 const obj1 = { a: 1, b: 2 }
 const obj2 = { b: 3, c: 4 }

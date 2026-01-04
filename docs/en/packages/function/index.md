@@ -1,17 +1,17 @@
-# @lutlelk/function
+# @lutlelk-tools/function
 
 Collection of function manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/function
+pnpm add @lutlelk-tools/function
 ```
 
 ## Usage
 
 ```ts
-import { debounce, throttle, memoize, once, curry, partial, compose } from '@lutlelk/function'
+import { debounce, throttle, memoize, once, curry, partial, compose } from '@lutlelk-tools/function'
 ```
 
 ## API

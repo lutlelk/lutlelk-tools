@@ -1,11 +1,11 @@
-# @lutlelk/number
+# @lutlelk-tools/number
 
 数字处理工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/number
+pnpm add @lutlelk-tools/number
 ```
 
 ## 使用
@@ -21,7 +21,7 @@ import {
   average,
   toCurrency,
   toBytes
-} from '@lutlelk/number'
+} from '@lutlelk-tools/number'
 ```
 
 ## API

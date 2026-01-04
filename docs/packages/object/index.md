@@ -1,11 +1,11 @@
-# @lutlelk/object
+# @lutlelk-tools/object
 
 对象操作工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/object
+pnpm add @lutlelk-tools/object
 ```
 
 ## 使用
@@ -23,7 +23,7 @@ import {
   deepMerge,
   clone,
   deepClone
-} from '@lutlelk/object'
+} from '@lutlelk-tools/object'
 ```
 
 ## API

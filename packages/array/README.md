@@ -1,24 +1,24 @@
-# @lutlelk/array
+# @lutlelk-tools/array
 
 A lightweight array manipulation utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/array
+npm install @lutlelk-tools/array
 # or
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 # or
-yarn add @lutlelk/array
+yarn add @lutlelk-tools/array
 ```
 
 ## Usage
 
 ```typescript
-import { chunk, uniq, flatten, groupBy, sort, find, filter, map } from '@lutlelk/array'
+import { chunk, uniq, flatten, groupBy, sort, find, filter, map } from '@lutlelk-tools/array'
 
 // Or import single function for tree-shaking
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 ```
 
 ## API

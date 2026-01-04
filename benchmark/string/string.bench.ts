@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { toCamelCase, toKebabCase, slugify } from '@lutlelk/string'
+import { toCamelCase, toKebabCase, slugify } from '@lutlelk-tools/string'
 import { camelCase, kebabCase } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -7,7 +7,7 @@ const suite = new Benchmark.Suite()
 const testString = 'hello-world-test-string'
 
 suite
-  .add('@lutlelk/string/toCamelCase', function () {
+  .add('@lutlelk-tools/string/toCamelCase', function () {
     toCamelCase(testString)
   })
   .add('lodash/camelCase', function () {
@@ -26,7 +26,7 @@ console.log('\n--- toKebabCase ---\n')
 const suite2 = new Benchmark.Suite()
 
 suite2
-  .add('@lutlelk/string/toKebabCase', function () {
+  .add('@lutlelk-tools/string/toKebabCase', function () {
     toKebabCase(testString)
   })
   .add('lodash/kebabCase', function () {
@@ -45,7 +45,7 @@ console.log('\n--- slugify ---\n')
 const suite3 = new Benchmark.Suite()
 
 suite3
-  .add('@lutlelk/string/slugify', function () {
+  .add('@lutlelk-tools/string/slugify', function () {
     slugify('Hello World! This is a Test')
   })
   .on('cycle', function (event) {

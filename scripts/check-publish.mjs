@@ -32,7 +32,7 @@ packages.forEach(pkgName => {
   
   const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'))
   
-  console.log(`\n📦 Checking @lutlelk/${pkgName}...`)
+  console.log(`\n📦 Checking @lutlelk-tools/${pkgName}...`)
   
   if (pkg.private) {
     errors.push(`❌ Package ${pkgName}: private is set to true`)

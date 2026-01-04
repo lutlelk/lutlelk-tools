@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { chunk } from '@lutlelk/array'
+import { chunk } from '@lutlelk-tools/array'
 import { chunk as lodashChunk } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -7,7 +7,7 @@ const suite = new Benchmark.Suite()
 const largeArray = Array.from({ length: 10000 }, (_, i) => i)
 
 suite
-  .add('@lutlelk/array/chunk', function () {
+  .add('@lutlelk-tools/array/chunk', function () {
     chunk(largeArray, 100)
   })
   .add('lodash/chunk', function () {

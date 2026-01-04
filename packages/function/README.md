@@ -1,24 +1,24 @@
-# @lutlelk/function
+# @lutlelk-tools/function
 
 A comprehensive function utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/function
+npm install @lutlelk-tools/function
 # or
-pnpm add @lutlelk/function
+pnpm add @lutlelk-tools/function
 # or
-yarn add @lutlelk/function
+yarn add @lutlelk-tools/function
 ```
 
 ## Usage
 
 ```typescript
-import { debounce, throttle, memoize, curry, compose } from '@lutlelk/function'
+import { debounce, throttle, memoize, curry, compose } from '@lutlelk-tools/function'
 
 // Or import single function for tree-shaking
-import debounce from '@lutlelk/function/debounce'
+import debounce from '@lutlelk-tools/function/debounce'
 ```
 
 ## API

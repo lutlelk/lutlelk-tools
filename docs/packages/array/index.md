@@ -1,17 +1,17 @@
-# @lutlelk/array
+# @lutlelk-tools/array
 
 数组操作工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 ```
 
 ## 使用
 
 ```ts
-import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@lutlelk/array'
+import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@lutlelk-tools/array'
 ```
 
 ## API

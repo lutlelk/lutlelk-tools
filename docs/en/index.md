@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: lutlelk
+  name: lutlelk-tools
   text: Lightweight JavaScript Utility Library
   tagline: A collection of common utility functions
   actions:
@@ -11,7 +11,7 @@ hero:
       link: /en/guide/introduction
     - theme: alt
       text: GitHub
-      link: https://github.com/yourusername/lutlelk
+      link: https://github.com/yourusername/lutlelk-tools
 
 features:
   - title: Lightweight
@@ -32,10 +32,10 @@ features:
 
 ```bash
 # Install a single package
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 
 # Install multiple packages
-pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
+pnpm add @lutlelk-tools/array @lutlelk-tools/string @lutlelk-tools/object
 ```
 
 ## Usage Examples
@@ -43,7 +43,7 @@ pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
 ### Regular Import
 
 ```ts
-import { chunk } from '@lutlelk/array'
+import { chunk } from '@lutlelk-tools/array'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -52,7 +52,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### Single File On-Demand Import
 
 ```ts
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -61,7 +61,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### CDN Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
 <script>
   const result = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
   console.log(result) // [[1, 2], [3, 4], [5]]

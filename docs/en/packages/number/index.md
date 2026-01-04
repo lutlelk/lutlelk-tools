@@ -1,17 +1,17 @@
-# @lutlelk/number
+# @lutlelk-tools/number
 
 Collection of number processing utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/number
+pnpm add @lutlelk-tools/number
 ```
 
 ## Usage
 
 ```ts
-import { clamp, random, format, toCurrency, isPrime } from '@lutlelk/number'
+import { clamp, random, format, toCurrency, isPrime } from '@lutlelk-tools/number'
 ```
 
 ## API

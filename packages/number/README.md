@@ -1,15 +1,15 @@
-# @lutlelk/number
+# @lutlelk-tools/number
 
 A comprehensive number utility library for TypeScript/JavaScript with validation, formatting, conversion, and mathematical operations.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/number
+npm install @lutlelk-tools/number
 # or
-pnpm add @lutlelk/number
+pnpm add @lutlelk-tools/number
 # or
-yarn add @lutlelk/number
+yarn add @lutlelk-tools/number
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @lutlelk/number
 ### Import the entire package
 
 ```typescript
-import { clamp, random, format, toCurrency } from '@lutlelk/number'
+import { clamp, random, format, toCurrency } from '@lutlelk-tools/number'
 
 clamp(5, 0, 10) // => 5
 clamp(15, 0, 10) // => 10
@@ -26,7 +26,7 @@ clamp(15, 0, 10) // => 10
 ### Import specific functions (tree-shaking supported)
 
 ```typescript
-import { randomInt, toBytes, isPrime } from '@lutlelk/number'
+import { randomInt, toBytes, isPrime } from '@lutlelk-tools/number'
 
 randomInt(1, 10) // => random integer between 1 and 10
 toBytes(1024) // => "1.00 KB"

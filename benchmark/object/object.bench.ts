@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { deepClone, pick, omit } from '@lutlelk/object'
+import { deepClone, pick, omit } from '@lutlelk-tools/object'
 import { cloneDeep, pick as lodashPick, omit as lodashOmit } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -16,7 +16,7 @@ const largeObject = {
 console.log('--- deepClone ---\n')
 
 suite
-  .add('@lutlelk/object/deepClone', function () {
+  .add('@lutlelk-tools/object/deepClone', function () {
     deepClone(largeObject)
   })
   .add('lodash/cloneDeep', function () {
@@ -35,7 +35,7 @@ console.log('\n--- pick ---\n')
 const suite2 = new Benchmark.Suite()
 
 suite2
-  .add('@lutlelk/object/pick', function () {
+  .add('@lutlelk-tools/object/pick', function () {
     pick(largeObject, ['a', 'b', 'c'])
   })
   .add('lodash/pick', function () {
@@ -54,7 +54,7 @@ console.log('\n--- omit ---\n')
 const suite3 = new Benchmark.Suite()
 
 suite3
-  .add('@lutlelk/object/omit', function () {
+  .add('@lutlelk-tools/object/omit', function () {
     omit(largeObject, ['a', 'b'])
   })
   .add('lodash/omit', function () {

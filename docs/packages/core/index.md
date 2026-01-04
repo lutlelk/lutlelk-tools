@@ -1,11 +1,11 @@
-# @lutlelk/core
+# @lutlelk-tools/core
 
 核心工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/core
+pnpm add @lutlelk-tools/core
 ```
 
 ## 使用
@@ -30,7 +30,7 @@ import {
   toNumber,
   toBoolean,
   isStrictEqual
-} from '@lutlelk/core'
+} from '@lutlelk-tools/core'
 ```
 
 ## API
@@ -457,7 +457,7 @@ entries({ a: 1, b: 2 }) // [['a', 1], ['b', 2]]
 #### 安全的属性访问
 
 ```ts
-import { get } from '@lutlelk/core'
+import { get } from '@lutlelk-tools/core'
 
 const user = {
   profile: {
@@ -478,7 +478,7 @@ console.log(country) // 'Unknown'
 #### 类型检查和转换
 
 ```ts
-import { isString, toNumber, toBoolean } from '@lutlelk/core'
+import { isString, toNumber, toBoolean } from '@lutlelk-tools/core'
 
 function processValue(value: unknown) {
   if (isString(value)) {
@@ -498,7 +498,7 @@ console.log(processValue('true')) // true
 #### 深度比较
 
 ```ts
-import { isEqual } from '@lutlelk/core'
+import { isEqual } from '@lutlelk-tools/core'
 
 const obj1 = { a: 1, b: { c: 2 } }
 const obj2 = { a: 1, b: { c: 2 } }
@@ -511,7 +511,7 @@ console.log(isEqual(obj1, obj3)) // false
 #### 创建数组
 
 ```ts
-import { times } from '@lutlelk/core'
+import { times } from '@lutlelk-tools/core'
 
 const indices = times(5, i => i)
 console.log(indices) // [0, 1, 2, 3, 4]

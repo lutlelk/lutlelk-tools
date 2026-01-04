@@ -1,17 +1,17 @@
-# @lutlelk/core
+# @lutlelk-tools/core
 
 Core utility library providing type guards and common helper functions for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/core
+pnpm add @lutlelk-tools/core
 ```
 
 ## Usage
 
 ```ts
-import { isString, isNumber, isEmpty, noop, times } from '@lutlelk/core'
+import { isString, isNumber, isEmpty, noop, times } from '@lutlelk-tools/core'
 ```
 
 ## API

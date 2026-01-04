@@ -5,13 +5,13 @@
 使用 pnpm 安装单个包：
 
 ```bash
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 ```
 
 安装多个包：
 
 ```bash
-pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
+pnpm add @lutlelk-tools/array @lutlelk-tools/string @lutlelk-tools/object
 ```
 
 ## 使用
@@ -19,7 +19,7 @@ pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
 ### ESM 方式
 
 ```ts
-import { chunk } from '@lutlelk/array'
+import { chunk } from '@lutlelk-tools/array'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -28,7 +28,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### CommonJS 方式
 
 ```js
-const { chunk } = require('@lutlelk/array')
+const { chunk } = require('@lutlelk-tools/array')
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -36,11 +36,11 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 
 ### 单文件按需导入
 
-lutlelk 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking：
+lutlelk-tools 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking：
 
 ```ts
 // 直接导入单个函数
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -54,25 +54,25 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 所有包都支持单文件按需导入，例如：
 
 ```ts
-import toCamelCase from '@lutlelk/string/toCamelCase'
-import deepClone from '@lutlelk/object/deepClone'
-import debounce from '@lutlelk/function/debounce'
-import isPrime from '@lutlelk/number/isPrime'
+import toCamelCase from '@lutlelk-tools/string/toCamelCase'
+import deepClone from '@lutlelk-tools/object/deepClone'
+import debounce from '@lutlelk-tools/function/debounce'
+import isPrime from '@lutlelk-tools/number/isPrime'
 ```
 
 ### CDN 使用
 
-lutlelk 支持 CDN 方式引入，适合在浏览器中直接使用：
+lutlelk-tools 支持 CDN 方式引入，适合在浏览器中直接使用：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>lutlelk CDN Example</title>
+  <title>lutlelk-tools CDN Example</title>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/string@latest/dist/string.iife.js"></script>
   <script>
     // 使用全局变量
     const result = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
@@ -89,15 +89,15 @@ lutlelk 支持 CDN 方式引入，适合在浏览器中直接使用：
 
 | 包名 | CDN 链接 | 全局变量名 |
 |------|----------|-----------|
-| @lutlelk/array | `@lutlelk/array/dist/array.iife.js` | `window.feUtilsArray` |
-| @lutlelk/string | `@lutlelk/string/dist/string.iife.js` | `window.feUtilsString` |
-| @lutlelk/object | `@lutlelk/object/dist/object.iife.js` | `window.feUtilsObject` |
-| @lutlelk/function | `@lutlelk/function/dist/function.iife.js` | `window.feUtilsFunction` |
-| @lutlelk/number | `@lutlelk/number/dist/number.iife.js` | `window.feUtilsNumber` |
-| @lutlelk/date | `@lutlelk/date/dist/date.iife.js` | `window.feUtilsDate` |
-| @lutlelk/dom | `@lutlelk/dom/dist/dom.iife.js` | `window.feUtilsDom` |
-| @lutlelk/async | `@lutlelk/async/dist/async.iife.js` | `window.feUtilsAsync` |
-| @lutlelk/core | `@lutlelk/core/dist/core.iife.js` | `window.feUtilsCore` |
+| @lutlelk-tools/array | `@lutlelk-tools/array/dist/array.iife.js` | `window.feUtilsArray` |
+| @lutlelk-tools/string | `@lutlelk-tools/string/dist/string.iife.js` | `window.feUtilsString` |
+| @lutlelk-tools/object | `@lutlelk-tools/object/dist/object.iife.js` | `window.feUtilsObject` |
+| @lutlelk-tools/function | `@lutlelk-tools/function/dist/function.iife.js` | `window.feUtilsFunction` |
+| @lutlelk-tools/number | `@lutlelk-tools/number/dist/number.iife.js` | `window.feUtilsNumber` |
+| @lutlelk-tools/date | `@lutlelk-tools/date/dist/date.iife.js` | `window.feUtilsDate` |
+| @lutlelk-tools/dom | `@lutlelk-tools/dom/dist/dom.iife.js` | `window.feUtilsDom` |
+| @lutlelk-tools/async | `@lutlelk-tools/async/dist/async.iife.js` | `window.feUtilsAsync` |
+| @lutlelk-tools/core | `@lutlelk-tools/core/dist/core.iife.js` | `window.feUtilsCore` |
 
 使用 CDN 的优势：
 - 无需构建工具，直接在浏览器中使用
@@ -109,8 +109,8 @@ lutlelk 支持 CDN 方式引入，适合在浏览器中直接使用：
 克隆仓库并安装依赖：
 
 ```bash
-git clone https://github.com/yourusername/lutlelk.git
-cd lutlelk
+git clone https://github.com/yourusername/lutlelk-tools.git
+cd lutlelk-tools
 pnpm install
 ```
 

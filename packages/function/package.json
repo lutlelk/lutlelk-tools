@@ -1,13 +1,15 @@
 {
-  "name": "@lutlelk/function",
-  "version": "0.1.0",
+  "name": "@lutlelk-tools/function",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "sideEffects": false,
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

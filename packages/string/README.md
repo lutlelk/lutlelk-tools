@@ -1,15 +1,15 @@
-# @lutlelk/string
+# @lutlelk-tools/string
 
 A comprehensive string utility library for TypeScript/JavaScript with validation, transformation, formatting, encoding, and generation capabilities.
 
 ## Installation
 
 ```bash
-npm install @lutlelk/string
+npm install @lutlelk-tools/string
 # or
-pnpm add @lutlelk/string
+pnpm add @lutlelk-tools/string
 # or
-yarn add @lutlelk/string
+yarn add @lutlelk-tools/string
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @lutlelk/string
 ### Import the entire package
 
 ```typescript
-import { toCamelCase, slugify, isEmail, mask } from '@lutlelk/string'
+import { toCamelCase, slugify, isEmail, mask } from '@lutlelk-tools/string'
 
 toCamelCase('hello-world') // => "helloWorld"
 slugify('Hello World!') // => "hello-world"
@@ -27,7 +27,7 @@ isEmail('test@example.com') // => true
 ### Import specific functions (tree-shaking supported)
 
 ```typescript
-import { toKebabCase, capitalize, generateUUID } from '@lutlelk/string'
+import { toKebabCase, capitalize, generateUUID } from '@lutlelk-tools/string'
 
 toKebabCase('helloWorld') // => "hello-world"
 capitalize('hello') // => "Hello"

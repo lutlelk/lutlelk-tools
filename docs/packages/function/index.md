@@ -1,11 +1,11 @@
-# @lutlelk/function
+# @lutlelk-tools/function
 
 函数式编程工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/function
+pnpm add @lutlelk-tools/function
 ```
 
 ## 使用
@@ -21,7 +21,7 @@ import {
   compose,
   delay,
   retry
-} from '@lutlelk/function'
+} from '@lutlelk-tools/function'
 ```
 
 ## API

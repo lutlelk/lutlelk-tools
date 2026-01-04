@@ -1,6 +1,6 @@
 # Introduction
 
-lutlelk is a lightweight JavaScript utility library that provides a collection of common utility functions. It uses a modular design where each functional package can be installed and used independently.
+lutlelk-tools is a lightweight JavaScript utility library that provides a collection of common utility functions. It uses a modular design where each functional package can be installed and used independently.
 
 ## Features
 
@@ -13,42 +13,42 @@ lutlelk is a lightweight JavaScript utility library that provides a collection o
 
 ## Package List
 
-lutlelk includes the following functional packages:
+lutlelk-tools includes the following functional packages:
 
 | Package | Description |
 |---------|-------------|
-| `@lutlelk/array` | Array manipulation utility functions |
-| `@lutlelk/string` | String processing utility functions |
-| `@lutlelk/object` | Object manipulation utility functions |
-| `@lutlelk/function` | Function manipulation utility functions |
-| `@lutlelk/number` | Number processing utility functions |
-| `@lutlelk/date` | Date and time processing utility functions |
-| `@lutlelk/dom` | DOM manipulation utility functions |
-| `@lutlelk/async` | Async operation utility functions |
-| `@lutlelk/core` | Core utility functions |
+| `@lutlelk-tools/array` | Array manipulation utility functions |
+| `@lutlelk-tools/string` | String processing utility functions |
+| `@lutlelk-tools/object` | Object manipulation utility functions |
+| `@lutlelk-tools/function` | Function manipulation utility functions |
+| `@lutlelk-tools/number` | Number processing utility functions |
+| `@lutlelk-tools/date` | Date and time processing utility functions |
+| `@lutlelk-tools/dom` | DOM manipulation utility functions |
+| `@lutlelk-tools/async` | Async operation utility functions |
+| `@lutlelk-tools/core` | Core utility functions |
 
 ## Usage
 
 ### npm/yarn/pnpm Installation
 
 ```bash
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 ```
 
 ```ts
-import { chunk } from '@lutlelk/array'
+import { chunk } from '@lutlelk-tools/array'
 ```
 
 ### Single File On-Demand Import
 
 ```ts
-import chunk from '@lutlelk/array/chunk'
+import chunk from '@lutlelk-tools/array/chunk'
 ```
 
 ### CDN Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk-tools/array@latest/dist/array.iife.js"></script>
 <script>
   window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
 </script>

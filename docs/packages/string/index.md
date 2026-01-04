@@ -1,11 +1,11 @@
-# @lutlelk/string
+# @lutlelk-tools/string
 
 字符串处理工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @lutlelk/string
+pnpm add @lutlelk-tools/string
 ```
 
 ## 使用
@@ -25,7 +25,7 @@ import {
   escape,
   generateUUID,
   random
-} from '@lutlelk/string'
+} from '@lutlelk-tools/string'
 ```
 
 ## API

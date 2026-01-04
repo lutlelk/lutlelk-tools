@@ -1,17 +1,17 @@
-# @lutlelk/string
+# @lutlelk-tools/string
 
 Collection of string processing utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/string
+pnpm add @lutlelk-tools/string
 ```
 
 ## Usage
 
 ```ts
-import { toCamelCase, toKebabCase, slugify, capitalize, isEmail, isUrl } from '@lutlelk/string'
+import { toCamelCase, toKebabCase, slugify, capitalize, isEmail, isUrl } from '@lutlelk-tools/string'
 ```
 
 ## API

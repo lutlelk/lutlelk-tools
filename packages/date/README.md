@@ -1,15 +1,15 @@
-# @lutlelk/date
+# @lutlelk-tools/date
 
 一个轻量级的 JavaScript 日期处理工具库，提供简洁易用的日期操作 API。
 
 ## 安装
 
 ```bash
-npm install @lutlelk/date
+npm install @lutlelk-tools/date
 # 或
-pnpm add @lutlelk/date
+pnpm add @lutlelk-tools/date
 # 或
-yarn add @lutlelk/date
+yarn add @lutlelk-tools/date
 ```
 
 ## 使用
@@ -42,7 +42,7 @@ import {
   clamp,
   isBetween,
   range
-} from '@lutlelk/date'
+} from '@lutlelk-tools/date'
 ```
 
 ## API

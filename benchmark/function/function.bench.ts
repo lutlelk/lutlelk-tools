@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { debounce, throttle, memoize } from '@lutlelk/function'
+import { debounce, throttle, memoize } from '@lutlelk-tools/function'
 import { debounce as lodashDebounce, throttle as lodashThrottle, memoize as lodashMemoize } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -13,7 +13,7 @@ const debouncedFn = debounce(() => {
 }, 100)
 
 suite
-  .add('@lutlelk/function/debounce', function () {
+  .add('@lutlelk-tools/function/debounce', function () {
     debouncedFn()
   })
   .add('lodash/debounce', function () {
@@ -36,7 +36,7 @@ const throttledFn = throttle(() => {
 }, 100)
 
 suite2
-  .add('@lutlelk/function/throttle', function () {
+  .add('@lutlelk-tools/function/throttle', function () {
     throttledFn()
   })
   .add('lodash/throttle', function () {
@@ -66,7 +66,7 @@ const memoizedFn = memoize(expensiveFn)
 const lodashMemoizedFn = lodashMemoize(expensiveFn)
 
 suite3
-  .add('@lutlelk/function/memoize', function () {
+  .add('@lutlelk-tools/function/memoize', function () {
     memoizedFn(1000)
   })
   .add('lodash/memoize', function () {

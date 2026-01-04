@@ -1,6 +1,6 @@
 {
-  "name": "@lutlelk/dom",
-  "version": "0.1.0",
+  "name": "@lutlelk-tools/dom",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "sideEffects": false,

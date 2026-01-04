@@ -16,7 +16,7 @@ const benchmarks = [
 ]
 
 console.log('='.repeat(60))
-console.log('lutlelk Performance Benchmark')
+console.log('lutlelk-tools Performance Benchmark')
 console.log('='.repeat(60))
 console.log()
 

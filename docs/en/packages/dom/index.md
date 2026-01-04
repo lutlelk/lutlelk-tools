@@ -1,17 +1,17 @@
-# @lutlelk/dom
+# @lutlelk-tools/dom
 
 DOM manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/dom
+pnpm add @lutlelk-tools/dom
 ```
 
 ## Usage
 
 ```ts
-import { $, $$, addClass, removeClass, on, off } from '@lutlelk/dom'
+import { $, $$, addClass, removeClass, on, off } from '@lutlelk-tools/dom'
 ```
 
 ## API

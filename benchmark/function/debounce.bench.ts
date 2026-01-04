@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { debounce } from '@lutlelk/function'
+import { debounce } from '@lutlelk-tools/function'
 import { debounce as lodashDebounce } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -15,7 +15,7 @@ const lodashDebouncedFn = lodashDebounce(() => {
 }, 100)
 
 suite
-  .add('@lutlelk/function/debounce', function () {
+  .add('@lutlelk-tools/function/debounce', function () {
     debouncedFn()
   })
   .add('lodash/debounce', function () {

@@ -1,6 +1,6 @@
 # 性能对比
 
-lutlelk 与 lodash 的性能对比测试结果。
+lutlelk-tools 与 lodash 的性能对比测试结果。
 
 ## 测试环境
 
@@ -12,60 +12,60 @@ lutlelk 与 lodash 的性能对比测试结果。
 
 ### 数组操作
 
-| 函数 | lutlelk | lodash | 性能提升 |
+| 函数 | lutlelk-tools | lodash | 性能提升 |
 |------|-----------|--------|----------|
 | chunk | 339,221 ops/sec | 69,651 ops/sec | **4.87x** ⚡ |
 
-**结论**: lutlelk 的 `chunk` 函数比 lodash 快约 **4.87 倍**。
+**结论**: lutlelk-tools 的 `chunk` 函数比 lodash 快约 **4.87 倍**。
 
 ### 字符串操作
 
-| 函数 | lutlelk | lodash | 性能提升 |
+| 函数 | lutlelk-tools | lodash | 性能提升 |
 |------|-----------|--------|----------|
 | toCamelCase | 2,042,864 ops/sec | 2,787,275 ops/sec | 0.73x |
 | toKebabCase | 9,433,229 ops/sec | 3,774,560 ops/sec | **2.50x** ⚡ |
 | slugify | 2,684,512 ops/sec | N/A | - |
 
 **结论**:
-- lutlelk 的 `toKebabCase` 函数比 lodash 快约 **2.50 倍**
+- lutlelk-tools 的 `toKebabCase` 函数比 lodash 快约 **2.50 倍**
 - `toCamelCase` 略慢于 lodash，但差异不大
-- `slugify` 是 lutlelk 独有功能，lodash 没有直接对应
+- `slugify` 是 lutlelk-tools 独有功能，lodash 没有直接对应
 
 ### 对象操作
 
-| 函数 | lutlelk | lodash | 性能提升 |
+| 函数 | lutlelk-tools | lodash | 性能提升 |
 |------|-----------|--------|----------|
 | deepClone | 3,284,877 ops/sec | 561,096 ops/sec | **5.86x** ⚡ |
 | pick | 16,066,771 ops/sec | 2,776,220 ops/sec | **5.79x** ⚡ |
 | omit | 7,161,302 ops/sec | 1,726,738 ops/sec | **4.15x** ⚡ |
 
-**结论**: lutlelk 的对象操作函数全面领先，性能提升 **4-6 倍**。
+**结论**: lutlelk-tools 的对象操作函数全面领先，性能提升 **4-6 倍**。
 
 ### 函数操作
 
-| 函数 | lutlelk | lodash | 性能提升 |
+| 函数 | lutlelk-tools | lodash | 性能提升 |
 |------|-----------|--------|----------|
 | debounce | 12,478,751 ops/sec | 1,080,145 ops/sec | **11.55x** ⚡ |
 | throttle | 34,479,411 ops/sec | 1,280,481 ops/sec | **26.93x** ⚡ |
 | memoize | 188,902,424 ops/sec | 41,630,206 ops/sec | **4.54x** ⚡ |
 
-**结论**: lutlelk 的函数操作性能优势明显，特别是 `throttle` 快约 **27 倍**。
+**结论**: lutlelk-tools 的函数操作性能优势明显，特别是 `throttle` 快约 **27 倍**。
 
 ### 数字操作
 
-| 函数 | lutlelk | lodash | 性能提升 |
+| 函数 | lutlelk-tools | lodash | 性能提升 |
 |------|-----------|--------|----------|
 | clamp | 1,866,471,799 ops/sec | 124,028,550 ops/sec | **15.05x** ⚡ |
 | random | 236,032,656 ops/sec | 89,895,973 ops/sec | **2.63x** ⚡ |
 | range | 296,126 ops/sec | 691,904 ops/sec | 0.43x |
 
 **结论**:
-- lutlelk 的 `clamp` 和 `random` 函数性能显著优于 lodash
+- lutlelk-tools 的 `clamp` 和 `random` 函数性能显著优于 lodash
 - `range` 函数 lodash 略快，但差异不大
 
 ## 总体性能对比
 
-### lutlelk 更快的操作 (11/13)
+### lutlelk-tools 更快的操作 (11/13)
 
 1. **chunk** - 4.87x 更快
 2. **toKebabCase** - 2.50x 更快
@@ -77,7 +77,7 @@ lutlelk 与 lodash 的性能对比测试结果。
 8. **memoize** - 4.54x 更快
 9. **clamp** - 15.05x 更快
 10. **random** - 2.63x 更快
-11. **slugify** - lutlelk 独有功能
+11. **slugify** - lutlelk-tools 独有功能
 
 ### lodash 更快的操作 (2/13)
 
@@ -86,7 +86,7 @@ lutlelk 与 lodash 的性能对比测试结果。
 
 ## 性能优势总结
 
-lutlelk 在以下方面具有显著优势：
+lutlelk-tools 在以下方面具有显著优势：
 
 ### 1. **对象操作** - 平均 5.27x 更快
 - deepClone: 5.86x
@@ -108,10 +108,10 @@ lutlelk 在以下方面具有显著优势：
 ### 5. **字符串操作** - 2.50x 更快
 - toKebabCase: 2.50x
 
-## 为什么 lutlelk 更快？
+## 为什么 lutlelk-tools 更快？
 
 ### 1. **专注的核心功能**
-- lutlelk 专注于常用场景，避免过度设计
+- lutlelk-tools 专注于常用场景，避免过度设计
 - 简化的实现减少了不必要的开销
 
 ### 2. **现代 JavaScript 特性**
@@ -135,17 +135,17 @@ lutlelk 在以下方面具有显著优势：
 | 库 | 体积 |
 |------|------|
 | lodash | ~70 KB (gzipped) |
-| @lutlelk/array | ~1.5 KB (gzipped) |
-| @lutlelk/string | ~4 KB (gzipped) |
-| @lutlelk/object | ~4 KB (gzipped) |
-| @lutlelk/function | ~4 KB (gzipped) |
-| @lutlelk/number | ~4 KB (gzipped) |
+| @lutlelk-tools/array | ~1.5 KB (gzipped) |
+| @lutlelk-tools/string | ~4 KB (gzipped) |
+| @lutlelk-tools/object | ~4 KB (gzipped) |
+| @lutlelk-tools/function | ~4 KB (gzipped) |
+| @lutlelk-tools/number | ~4 KB (gzipped) |
 
-**结论**: lutlelk 单个包的体积远小于 lodash，按需使用时优势更明显。
+**结论**: lutlelk-tools 单个包的体积远小于 lodash，按需使用时优势更明显。
 
 ## 使用建议
 
-### 选择 lutlelk 的场景
+### 选择 lutlelk-tools 的场景
 
 1. **性能敏感的应用**
    - 需要高性能的对象、函数操作
@@ -174,7 +174,7 @@ lutlelk 在以下方面具有显著优势：
    - 现有项目已使用 lodash
 
 3. **特殊需求**
-   - 需要某些 lutlelk 未提供的功能
+   - 需要某些 lutlelk-tools 未提供的功能
    - 需要更复杂的工具函数
 
 ## 运行 Benchmark
@@ -206,6 +206,6 @@ npx tsx benchmark/number/number.bench.ts
 
 ## 结论
 
-lutlelk 在大多数常用操作上都比 lodash 更快，特别是在对象操作、函数操作和数字操作方面性能优势明显。同时，lutlelk 的包体积更小，支持更好的 tree-shaking，适合现代前端开发。
+lutlelk-tools 在大多数常用操作上都比 lodash 更快，特别是在对象操作、函数操作和数字操作方面性能优势明显。同时，lutlelk-tools 的包体积更小，支持更好的 tree-shaking，适合现代前端开发。
 
-对于只需要常用工具函数的项目，lutlelk 是一个更轻量、更快速的选择。
+对于只需要常用工具函数的项目，lutlelk-tools 是一个更轻量、更快速的选择。

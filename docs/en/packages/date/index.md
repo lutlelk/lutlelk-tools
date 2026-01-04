@@ -1,11 +1,11 @@
-# @lutlelk/date
+# @lutlelk-tools/date
 
 A lightweight JavaScript date processing utility library with simple and easy-to-use date manipulation APIs.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/date
+pnpm add @lutlelk-tools/date
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ import {
   today,
   tomorrow,
   yesterday
-} from '@lutlelk/date'
+} from '@lutlelk-tools/date'
 ```
 
 ## API

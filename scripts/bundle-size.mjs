@@ -18,7 +18,7 @@ for (const pkg of packages) {
     const dtsFile = files.find(f => f === 'index.d.ts')
 
     const result = {
-      package: `@lutlelk/${pkg}`,
+      package: `@lutlelk-tools/${pkg}`,
       esm: null,
       cjs: null,
       dts: null,

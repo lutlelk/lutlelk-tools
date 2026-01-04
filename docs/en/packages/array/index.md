@@ -1,17 +1,17 @@
-# @lutlelk/array
+# @lutlelk-tools/array
 
 Collection of array manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @lutlelk/array
+pnpm add @lutlelk-tools/array
 ```
 
 ## Usage
 
 ```ts
-import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@lutlelk/array'
+import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@lutlelk-tools/array'
 ```
 
 ## API
