@@ -1,11 +1,11 @@
 {
-  "name": "@fe-utils",
+  "name": "@lutlelk",
   "private": true,
   "version": "1.0.0",
   "description": "一个轻量级的 JavaScript 工具库，提供常用的工具函数集合",
   "scripts": {
     "build": "pnpm --filter './packages/*' build",
-    "build:all": "pnpm --filter './packages/*' build && pnpm --filter '@fe-utils' build",
+    "build:all": "pnpm --filter './packages/*' build && pnpm --filter '@lutlelk' build",
     "build:iife": "node scripts/build-iife.mjs",
     "build:cdn": "pnpm build && pnpm build:iife",
     "test": "pnpm --filter './packages/*' test",

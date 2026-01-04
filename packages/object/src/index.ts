@@ -1,4 +1,4 @@
-import { isObject, isPlainObject, isEmpty } from '@fe-utils/core'
+import { isObject, isPlainObject, isEmpty } from '@lutlelk/core'
 
 export { isObject, isPlainObject, isEmpty }
 

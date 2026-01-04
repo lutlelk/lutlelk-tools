@@ -1,21 +1,21 @@
-# @fe-utils/core
+# @lutlelk/core
 
 Core utility library providing type guards and common helper functions for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @fe-utils/core
+npm install @lutlelk/core
 # or
-pnpm add @fe-utils/core
+pnpm add @lutlelk/core
 # or
-yarn add @fe-utils/core
+yarn add @lutlelk/core
 ```
 
 ## Usage
 
 ```typescript
-import { isString, isNumber, isEmpty, noop, times } from '@fe-utils/core'
+import { isString, isNumber, isEmpty, noop, times } from '@lutlelk/core'
 ```
 
 ## API

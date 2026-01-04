@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { throttle } from '@fe-utils/function'
+import { throttle } from '@lutlelk/function'
 import { throttle as lodashThrottle } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -15,7 +15,7 @@ const lodashThrottledFn = lodashThrottle(() => {
 }, 100)
 
 suite
-  .add('@fe-utils/function/throttle', function () {
+  .add('@lutlelk/function/throttle', function () {
     throttledFn()
   })
   .add('lodash/throttle', function () {

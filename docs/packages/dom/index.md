@@ -1,11 +1,11 @@
-# @fe-utils/dom
+# @lutlelk/dom
 
 DOM 操作工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @fe-utils/dom
+pnpm add @lutlelk/dom
 ```
 
 ## 使用
@@ -27,7 +27,7 @@ import {
   on,
   off,
   once
-} from '@fe-utils/dom'
+} from '@lutlelk/dom'
 ```
 
 ## API
@@ -410,7 +410,7 @@ isVisible(el) // true 或 false
 #### 创建并添加元素
 
 ```ts
-import { $, createElement, addClass, on } from '@fe-utils/dom'
+import { $, createElement, addClass, on } from '@lutlelk/dom'
 
 const button = createElement('button', {
   className: 'btn btn-primary',
@@ -427,7 +427,7 @@ document.body.appendChild(button)
 #### 查询和操作元素
 
 ```ts
-import { $, $$, addClass, removeClass, getAttr, setAttr } from '@fe-utils/dom'
+import { $, $$, addClass, removeClass, getAttr, setAttr } from '@lutlelk/dom'
 
 const items = $$('.item')
 items.forEach(item => {
@@ -442,7 +442,7 @@ removeClass(firstItem, 'active')
 #### 事件委托
 
 ```ts
-import { $, on } from '@fe-utils/dom'
+import { $, on } from '@lutlelk/dom'
 
 const list = $('.list')
 

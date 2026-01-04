@@ -1,6 +1,6 @@
 # Introduction
 
-fe-utils is a lightweight JavaScript utility library that provides a collection of common utility functions. It uses a modular design where each functional package can be installed and used independently.
+lutlelk is a lightweight JavaScript utility library that provides a collection of common utility functions. It uses a modular design where each functional package can be installed and used independently.
 
 ## Features
 
@@ -13,42 +13,42 @@ fe-utils is a lightweight JavaScript utility library that provides a collection 
 
 ## Package List
 
-fe-utils includes the following functional packages:
+lutlelk includes the following functional packages:
 
 | Package | Description |
 |---------|-------------|
-| `@fe-utils/array` | Array manipulation utility functions |
-| `@fe-utils/string` | String processing utility functions |
-| `@fe-utils/object` | Object manipulation utility functions |
-| `@fe-utils/function` | Function manipulation utility functions |
-| `@fe-utils/number` | Number processing utility functions |
-| `@fe-utils/date` | Date and time processing utility functions |
-| `@fe-utils/dom` | DOM manipulation utility functions |
-| `@fe-utils/async` | Async operation utility functions |
-| `@fe-utils/core` | Core utility functions |
+| `@lutlelk/array` | Array manipulation utility functions |
+| `@lutlelk/string` | String processing utility functions |
+| `@lutlelk/object` | Object manipulation utility functions |
+| `@lutlelk/function` | Function manipulation utility functions |
+| `@lutlelk/number` | Number processing utility functions |
+| `@lutlelk/date` | Date and time processing utility functions |
+| `@lutlelk/dom` | DOM manipulation utility functions |
+| `@lutlelk/async` | Async operation utility functions |
+| `@lutlelk/core` | Core utility functions |
 
 ## Usage
 
 ### npm/yarn/pnpm Installation
 
 ```bash
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 ```
 
 ```ts
-import { chunk } from '@fe-utils/array'
+import { chunk } from '@lutlelk/array'
 ```
 
 ### Single File On-Demand Import
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 ```
 
 ### CDN Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 <script>
   window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
 </script>

@@ -1,6 +1,6 @@
 # 发布到公共 npm 库指南
 
-本文档详细说明如何将 fe-utils 的各个包发布到公共 npm registry。
+本文档详细说明如何将 lutlelk 的各个包发布到公共 npm registry。
 
 ## 前置条件
 
@@ -15,7 +15,7 @@
 创建 npm automation token：
 1. 访问 https://www.npmjs.com/settings/tokens
 2. 点击 "Generate New Token" → "Automation"
-3. 设置 token 名称（如：`fe-utils-ci`）
+3. 设置 token 名称（如：`lutlelk-ci`）
 4. 复制生成的 token（只显示一次，请妥善保存）
 
 ### 3. GitHub Token（可选，用于创建 GitHub Release）
@@ -84,8 +84,8 @@ Drone CI 会自动执行以下步骤：
 #### 步骤 4：验证发布
 
 访问 npm 验证：
-- https://www.npmjs.com/package/@fe-utils/array
-- https://www.npmjs.com/package/@fe-utils/string
+- https://www.npmjs.com/package/@lutlelk/array
+- https://www.npmjs.com/package/@lutlelk/string
 - 等等...
 
 ### 方式二：手动发布
@@ -180,15 +180,15 @@ Drone CI 会自动：
 
 | 包名 | 版本 | 描述 |
 |------|------|------|
-| [@fe-utils/core](https://www.npmjs.com/package/@fe-utils/core) | 0.1.0 | Core utility functions and types |
-| [@fe-utils/array](https://www.npmjs.com/package/@fe-utils/array) | 0.1.0 | Array utilities |
-| [@fe-utils/string](https://www.npmjs.com/package/@fe-utils/string) | 0.1.0 | String utilities |
-| [@fe-utils/object](https://www.npmjs.com/package/@fe-utils/object) | 0.1.0 | Object utilities |
-| [@fe-utils/number](https://www.npmjs.com/package/@fe-utils/number) | 0.1.0 | Number utilities |
-| [@fe-utils/function](https://www.npmjs.com/package/@fe-utils/function) | 0.1.0 | Function utilities |
-| [@fe-utils/date](https://www.npmjs.com/package/@fe-utils/date) | 0.1.0 | Date utilities |
-| [@fe-utils/dom](https://www.npmjs.com/package/@fe-utils/dom) | 0.1.0 | DOM utilities |
-| [@fe-utils/async](https://www.npmjs.com/package/@fe-utils/async) | 0.1.0 | Async utilities |
+| [@lutlelk/core](https://www.npmjs.com/package/@lutlelk/core) | 0.1.0 | Core utility functions and types |
+| [@lutlelk/array](https://www.npmjs.com/package/@lutlelk/array) | 0.1.0 | Array utilities |
+| [@lutlelk/string](https://www.npmjs.com/package/@lutlelk/string) | 0.1.0 | String utilities |
+| [@lutlelk/object](https://www.npmjs.com/package/@lutlelk/object) | 0.1.0 | Object utilities |
+| [@lutlelk/number](https://www.npmjs.com/package/@lutlelk/number) | 0.1.0 | Number utilities |
+| [@lutlelk/function](https://www.npmjs.com/package/@lutlelk/function) | 0.1.0 | Function utilities |
+| [@lutlelk/date](https://www.npmjs.com/package/@lutlelk/date) | 0.1.0 | Date utilities |
+| [@lutlelk/dom](https://www.npmjs.com/package/@lutlelk/dom) | 0.1.0 | DOM utilities |
+| [@lutlelk/async](https://www.npmjs.com/package/@lutlelk/async) | 0.1.0 | Async utilities |
 
 ## 使用示例
 
@@ -198,23 +198,23 @@ Drone CI 会自动：
 
 ```bash
 # 安装 array 包
-npm install @fe-utils/array
+npm install @lutlelk/array
 
 # 安装多个包
-npm install @fe-utils/array @fe-utils/string @fe-utils/object
+npm install @lutlelk/array @lutlelk/string @lutlelk/object
 ```
 
 ### 使用包
 
 ```typescript
 // 导入 array 包
-import { chunk, flatten, uniq } from '@fe-utils/array'
+import { chunk, flatten, uniq } from '@lutlelk/array'
 
 // 导入 string 包
-import { isString, isEmpty } from '@fe-utils/string'
+import { isString, isEmpty } from '@lutlelk/string'
 
 // 导入 object 包
-import { deepClone, merge } from '@fe-utils/object'
+import { deepClone, merge } from '@lutlelk/object'
 
 // 使用
 const result = chunk([1, 2, 3, 4, 5], 2)
@@ -227,9 +227,9 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 
 ```typescript
 // 只导入需要的函数
-import { chunk } from '@fe-utils/array/chunk'
-import { debounce } from '@fe-utils/function/debounce'
-import { isString } from '@fe-utils/string'
+import { chunk } from '@lutlelk/array/chunk'
+import { debounce } from '@lutlelk/function/debounce'
+import { isString } from '@lutlelk/string'
 ```
 
 ## 常见问题
@@ -239,9 +239,9 @@ import { isString } from '@fe-utils/string'
 **原因**：包名已被占用或 scope 不存在
 
 **解决**：
-- 确保包名唯一：`@fe-utils/xxx`
+- 确保包名唯一：`@lutlelk/xxx`
 - 如果是首次发布，确保 scope 存在
-- 访问 https://www.npmjs.com/org/fe-utils 检查
+- 访问 https://www.npmjs.com/org/lutlelk 检查
 
 ### Q2: 发布失败，提示 "403 Forbidden"
 
@@ -267,7 +267,7 @@ import { isString } from '@fe-utils/string'
 - 可以发布新版本修复问题
 - 使用 `npm deprecate` 标记旧版本：
   ```bash
-  npm deprecate @fe-utils/array@0.1.0 "This version has security issues"
+  npm deprecate @lutlelk/array@0.1.0 "This version has security issues"
   ```
 
 ### Q5: 如何只发布某个包？
@@ -285,15 +285,15 @@ cd ../..
 **解决**：
 ```bash
 # 检查包是否已发布
-npm view @fe-utils/array
+npm view @lutlelk/array
 
 # 查看包的版本历史
-npm view @fe-utils/array versions
+npm view @lutlelk/array versions
 
 # 在新项目中测试
 npm create vite@latest my-test
 cd my-test
-npm install @fe-utils/array
+npm install @lutlelk/array
 ```
 
 ## 最佳实践
@@ -334,13 +334,13 @@ npm install @fe-utils/array
 ### 查看下载量
 
 访问 npm 查看包的下载统计：
-- https://www.npmjs.com/package/@fe-utils/array
+- https://www.npmjs.com/package/@lutlelk/array
 
 ### 查看依赖
 
 使用 npm 检查谁在使用你的包：
 ```bash
-npm view @fe-utils/array
+npm view @lutlelk/array
 ```
 
 ### 处理问题

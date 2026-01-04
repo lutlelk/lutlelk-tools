@@ -1,6 +1,6 @@
 # 介绍
 
-fe-utils 是一个轻量级的 JavaScript 工具库，提供常用的工具函数集合。它采用模块化设计，每个功能包都可以独立安装和使用。
+lutlelk 是一个轻量级的 JavaScript 工具库，提供常用的工具函数集合。它采用模块化设计，每个功能包都可以独立安装和使用。
 
 ## 特性
 
@@ -13,42 +13,42 @@ fe-utils 是一个轻量级的 JavaScript 工具库，提供常用的工具函�
 
 ## 包列表
 
-fe-utils 包含以下功能包：
+lutlelk 包含以下功能包：
 
 | 包名 | 描述 |
 |------|------|
-| `@fe-utils/array` | 数组操作工具函数 |
-| `@fe-utils/string` | 字符串处理工具函数 |
-| `@fe-utils/object` | 对象操作工具函数 |
-| `@fe-utils/function` | 函数操作工具函数 |
-| `@fe-utils/number` | 数字处理工具函数 |
-| `@fe-utils/date` | 日期时间处理工具函数 |
-| `@fe-utils/dom` | DOM 操作工具函数 |
-| `@fe-utils/async` | 异步操作工具函数 |
-| `@fe-utils/core` | 核心工具函数 |
+| `@lutlelk/array` | 数组操作工具函数 |
+| `@lutlelk/string` | 字符串处理工具函数 |
+| `@lutlelk/object` | 对象操作工具函数 |
+| `@lutlelk/function` | 函数操作工具函数 |
+| `@lutlelk/number` | 数字处理工具函数 |
+| `@lutlelk/date` | 日期时间处理工具函数 |
+| `@lutlelk/dom` | DOM 操作工具函数 |
+| `@lutlelk/async` | 异步操作工具函数 |
+| `@lutlelk/core` | 核心工具函数 |
 
 ## 使用方式
 
 ### npm/yarn/pnpm 安装
 
 ```bash
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 ```
 
 ```ts
-import { chunk } from '@fe-utils/array'
+import { chunk } from '@lutlelk/array'
 ```
 
 ### 单文件按需导入
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 ```
 
 ### CDN 使用
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 <script>
   window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
 </script>

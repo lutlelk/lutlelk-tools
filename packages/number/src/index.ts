@@ -1,4 +1,4 @@
-import { isNumber } from '@fe-utils/core'
+import { isNumber } from '@lutlelk/core'
 
 export { isNumber }
 

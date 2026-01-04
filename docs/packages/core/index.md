@@ -1,11 +1,11 @@
-# @fe-utils/core
+# @lutlelk/core
 
 核心工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @fe-utils/core
+pnpm add @lutlelk/core
 ```
 
 ## 使用
@@ -30,7 +30,7 @@ import {
   toNumber,
   toBoolean,
   isStrictEqual
-} from '@fe-utils/core'
+} from '@lutlelk/core'
 ```
 
 ## API
@@ -457,7 +457,7 @@ entries({ a: 1, b: 2 }) // [['a', 1], ['b', 2]]
 #### 安全的属性访问
 
 ```ts
-import { get } from '@fe-utils/core'
+import { get } from '@lutlelk/core'
 
 const user = {
   profile: {
@@ -478,7 +478,7 @@ console.log(country) // 'Unknown'
 #### 类型检查和转换
 
 ```ts
-import { isString, toNumber, toBoolean } from '@fe-utils/core'
+import { isString, toNumber, toBoolean } from '@lutlelk/core'
 
 function processValue(value: unknown) {
   if (isString(value)) {
@@ -498,7 +498,7 @@ console.log(processValue('true')) // true
 #### 深度比较
 
 ```ts
-import { isEqual } from '@fe-utils/core'
+import { isEqual } from '@lutlelk/core'
 
 const obj1 = { a: 1, b: { c: 2 } }
 const obj2 = { a: 1, b: { c: 2 } }
@@ -511,7 +511,7 @@ console.log(isEqual(obj1, obj3)) // false
 #### 创建数组
 
 ```ts
-import { times } from '@fe-utils/core'
+import { times } from '@lutlelk/core'
 
 const indices = times(5, i => i)
 console.log(indices) // [0, 1, 2, 3, 4]

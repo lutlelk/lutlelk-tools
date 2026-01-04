@@ -1,6 +1,6 @@
 # Performance Comparison
 
-Performance comparison test results between fe-utils and lodash.
+Performance comparison test results between lutlelk and lodash.
 
 ## Test Environment
 
@@ -12,60 +12,60 @@ Performance comparison test results between fe-utils and lodash.
 
 ### Array Operations
 
-| Function | fe-utils | lodash | Performance Improvement |
+| Function | lutlelk | lodash | Performance Improvement |
 |----------|-----------|--------|--------------------------|
 | chunk | 339,221 ops/sec | 69,651 ops/sec | **4.87x** ⚡ |
 
-**Conclusion**: fe-utils's `chunk` function is about **4.87x faster** than lodash.
+**Conclusion**: lutlelk's `chunk` function is about **4.87x faster** than lodash.
 
 ### String Operations
 
-| Function | fe-utils | lodash | Performance Improvement |
+| Function | lutlelk | lodash | Performance Improvement |
 |----------|-----------|--------|--------------------------|
 | toCamelCase | 2,042,864 ops/sec | 2,787,275 ops/sec | 0.73x |
 | toKebabCase | 9,433,229 ops/sec | 3,774,560 ops/sec | **2.50x** ⚡ |
 | slugify | 2,684,512 ops/sec | N/A | - |
 
 **Conclusion**:
-- fe-utils's `toKebabCase` function is about **2.50x faster** than lodash
+- lutlelk's `toKebabCase` function is about **2.50x faster** than lodash
 - `toCamelCase` is slightly slower than lodash, but the difference is minimal
-- `slugify` is a fe-utils exclusive feature, lodash has no direct equivalent
+- `slugify` is a lutlelk exclusive feature, lodash has no direct equivalent
 
 ### Object Operations
 
-| Function | fe-utils | lodash | Performance Improvement |
+| Function | lutlelk | lodash | Performance Improvement |
 |----------|-----------|--------|--------------------------|
 | deepClone | 3,284,877 ops/sec | 561,096 ops/sec | **5.86x** ⚡ |
 | pick | 16,066,771 ops/sec | 2,776,220 ops/sec | **5.79x** ⚡ |
 | omit | 7,161,302 ops/sec | 1,726,738 ops/sec | **4.15x** ⚡ |
 
-**Conclusion**: fe-utils's object operation functions lead comprehensively, with **4-6x** performance improvement.
+**Conclusion**: lutlelk's object operation functions lead comprehensively, with **4-6x** performance improvement.
 
 ### Function Operations
 
-| Function | fe-utils | lodash | Performance Improvement |
+| Function | lutlelk | lodash | Performance Improvement |
 |----------|-----------|--------|--------------------------|
 | debounce | 12,478,751 ops/sec | 1,080,145 ops/sec | **11.55x** ⚡ |
 | throttle | 34,479,411 ops/sec | 1,280,481 ops/sec | **26.93x** ⚡ |
 | memoize | 188,902,424 ops/sec | 41,630,206 ops/sec | **4.54x** ⚡ |
 
-**Conclusion**: fe-utils has significant performance advantage in function operations, especially `throttle` is about **27x faster**.
+**Conclusion**: lutlelk has significant performance advantage in function operations, especially `throttle` is about **27x faster**.
 
 ### Number Operations
 
-| Function | fe-utils | lodash | Performance Improvement |
+| Function | lutlelk | lodash | Performance Improvement |
 |----------|-----------|--------|--------------------------|
 | clamp | 1,866,471,799 ops/sec | 124,028,550 ops/sec | **15.05x** ⚡ |
 | random | 236,032,656 ops/sec | 89,895,973 ops/sec | **2.63x** ⚡ |
 | range | 296,126 ops/sec | 691,904 ops/sec | 0.43x |
 
 **Conclusion**:
-- fe-utils's `clamp` and `random` functions perform significantly better than lodash
+- lutlelk's `clamp` and `random` functions perform significantly better than lodash
 - `range` function is slightly faster in lodash, but the difference is minimal
 
 ## Overall Performance Comparison
 
-### fe-utils Faster Operations (11/13)
+### lutlelk Faster Operations (11/13)
 
 1. **chunk** - 4.87x faster
 2. **toKebabCase** - 2.50x faster
@@ -77,7 +77,7 @@ Performance comparison test results between fe-utils and lodash.
 8. **memoize** - 4.54x faster
 9. **clamp** - 15.05x faster
 10. **random** - 2.63x faster
-11. **slugify** - fe-utils exclusive feature
+11. **slugify** - lutlelk exclusive feature
 
 ### lodash Faster Operations (2/13)
 
@@ -86,7 +86,7 @@ Performance comparison test results between fe-utils and lodash.
 
 ## Performance Advantage Summary
 
-fe-utils has significant advantages in the following areas:
+lutlelk has significant advantages in the following areas:
 
 ### 1. **Object Operations** - Average 5.27x faster
 - deepClone: 5.86x
@@ -108,10 +108,10 @@ fe-utils has significant advantages in the following areas:
 ### 5. **String Operations** - 2.50x faster
 - toKebabCase: 2.50x
 
-## Why is fe-utils Faster?
+## Why is lutlelk Faster?
 
 ### 1. **Focused Core Functionality**
-- fe-utils focuses on common scenarios, avoiding over-engineering
+- lutlelk focuses on common scenarios, avoiding over-engineering
 - Simplified implementation reduces unnecessary overhead
 
 ### 2. **Modern JavaScript Features**
@@ -135,17 +135,17 @@ fe-utils has significant advantages in the following areas:
 | Library | Size |
 |---------|------|
 | lodash | ~70 KB (gzipped) |
-| @fe-utils/array | ~1.5 KB (gzipped) |
-| @fe-utils/string | ~4 KB (gzipped) |
-| @fe-utils/object | ~4 KB (gzipped) |
-| @fe-utils/function | ~4 KB (gzipped) |
-| @fe-utils/number | ~4 KB (gzipped) |
+| @lutlelk/array | ~1.5 KB (gzipped) |
+| @lutlelk/string | ~4 KB (gzipped) |
+| @lutlelk/object | ~4 KB (gzipped) |
+| @lutlelk/function | ~4 KB (gzipped) |
+| @lutlelk/number | ~4 KB (gzipped) |
 
-**Conclusion**: fe-utils single package size is much smaller than lodash, with more obvious advantages when used on-demand.
+**Conclusion**: lutlelk single package size is much smaller than lodash, with more obvious advantages when used on-demand.
 
 ## Usage Recommendations
 
-### Scenarios to Choose fe-utils
+### Scenarios to Choose lutlelk
 
 1. **Performance Sensitive Applications**
    - Need high-performance object and function operations
@@ -174,7 +174,7 @@ fe-utils has significant advantages in the following areas:
    - Existing projects already use lodash
 
 3. **Special Requirements**
-   - Need certain features not provided by fe-utils
+   - Need certain features not provided by lutlelk
    - Need more complex utility functions
 
 ## Running Benchmark
@@ -206,6 +206,6 @@ npx tsx benchmark/number/number.bench.ts
 
 ## Conclusion
 
-fe-utils is faster than lodash in most common operations, especially with significant performance advantages in object operations, function operations, and number operations. At the same time, fe-utils has smaller bundle size and supports better tree-shaking, making it suitable for modern frontend development.
+lutlelk is faster than lodash in most common operations, especially with significant performance advantages in object operations, function operations, and number operations. At the same time, lutlelk has smaller bundle size and supports better tree-shaking, making it suitable for modern frontend development.
 
-For projects that only need common utility functions, fe-utils is a lighter and faster choice.
+For projects that only need common utility functions, lutlelk is a lighter and faster choice.

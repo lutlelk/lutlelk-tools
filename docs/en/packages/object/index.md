@@ -1,17 +1,17 @@
-# @fe-utils/object
+# @lutlelk/object
 
 Collection of object manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/object
+pnpm add @lutlelk/object
 ```
 
 ## Usage
 
 ```ts
-import { get, set, pick, omit, merge, deepClone, clone } from '@fe-utils/object'
+import { get, set, pick, omit, merge, deepClone, clone } from '@lutlelk/object'
 ```
 
 ## API

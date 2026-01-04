@@ -1,5 +1,5 @@
 {
-  "name": "@fe-utils/object",
+  "name": "@lutlelk/object",
   "version": "0.1.0",
   "private": false,
   "type": "module",
@@ -25,7 +25,7 @@
     "type-tests": "tsd"
   },
   "dependencies": {
-    "@fe-utils/core": "workspace:*"
+    "@lutlelk/core": "workspace:*"
   },
   "devDependencies": {},
   "publishConfig": {

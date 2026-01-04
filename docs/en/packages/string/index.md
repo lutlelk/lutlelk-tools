@@ -1,17 +1,17 @@
-# @fe-utils/string
+# @lutlelk/string
 
 Collection of string processing utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/string
+pnpm add @lutlelk/string
 ```
 
 ## Usage
 
 ```ts
-import { toCamelCase, toKebabCase, slugify, capitalize, isEmail, isUrl } from '@fe-utils/string'
+import { toCamelCase, toKebabCase, slugify, capitalize, isEmail, isUrl } from '@lutlelk/string'
 ```
 
 ## API

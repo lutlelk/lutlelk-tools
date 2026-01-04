@@ -5,7 +5,7 @@ export default defineConfig({
     root: {
       label: '简体中文',
       lang: 'zh-CN',
-      title: 'fe-utils',
+      title: 'lutlelk',
       description: '轻量级 JavaScript 工具库',
       themeConfig: {
         nav: [
@@ -14,7 +14,7 @@ export default defineConfig({
           { text: '包文档', link: '/packages/array/index' },
           {
             text: 'GitHub',
-            link: 'https://github.com/yourusername/fe-utils'
+            link: 'https://github.com/yourusername/lutlelk'
           }
         ],
 
@@ -32,39 +32,39 @@ export default defineConfig({
           ],
           '/packages/': [
             {
-              text: '@fe-utils/array',
+              text: '@lutlelk/array',
               link: '/packages/array/index'
             },
             {
-              text: '@fe-utils/string',
+              text: '@lutlelk/string',
               link: '/packages/string/index'
             },
             {
-              text: '@fe-utils/object',
+              text: '@lutlelk/object',
               link: '/packages/object/index'
             },
             {
-              text: '@fe-utils/function',
+              text: '@lutlelk/function',
               link: '/packages/function/index'
             },
             {
-              text: '@fe-utils/number',
+              text: '@lutlelk/number',
               link: '/packages/number/index'
             },
             {
-              text: '@fe-utils/date',
+              text: '@lutlelk/date',
               link: '/packages/date/index'
             },
             {
-              text: '@fe-utils/dom',
+              text: '@lutlelk/dom',
               link: '/packages/dom/index'
             },
             {
-              text: '@fe-utils/core',
+              text: '@lutlelk/core',
               link: '/packages/core/index'
             },
             {
-              text: '@fe-utils/async',
+              text: '@lutlelk/async',
               link: '/packages/async/index'
             }
           ]
@@ -72,7 +72,7 @@ export default defineConfig({
 
         footer: {
           message: '基于 MIT 许可发布',
-          copyright: 'Copyright © 2024-present fe-utils'
+          copyright: 'Copyright © 2024-present lutlelk'
         },
 
         search: {
@@ -83,7 +83,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      title: 'fe-utils',
+      title: 'lutlelk',
       description: 'Lightweight JavaScript utility library',
       themeConfig: {
         nav: [
@@ -92,7 +92,7 @@ export default defineConfig({
           { text: 'Packages', link: '/en/packages/array/index' },
           {
             text: 'GitHub',
-            link: 'https://github.com/yourusername/fe-utils'
+            link: 'https://github.com/yourusername/lutlelk'
           }
         ],
 
@@ -110,39 +110,39 @@ export default defineConfig({
           ],
           '/en/packages/': [
             {
-              text: '@fe-utils/array',
+              text: '@lutlelk/array',
               link: '/en/packages/array/index'
             },
             {
-              text: '@fe-utils/string',
+              text: '@lutlelk/string',
               link: '/en/packages/string/index'
             },
             {
-              text: '@fe-utils/object',
+              text: '@lutlelk/object',
               link: '/en/packages/object/index'
             },
             {
-              text: '@fe-utils/function',
+              text: '@lutlelk/function',
               link: '/en/packages/function/index'
             },
             {
-              text: '@fe-utils/number',
+              text: '@lutlelk/number',
               link: '/en/packages/number/index'
             },
             {
-              text: '@fe-utils/date',
+              text: '@lutlelk/date',
               link: '/en/packages/date/index'
             },
             {
-              text: '@fe-utils/dom',
+              text: '@lutlelk/dom',
               link: '/en/packages/dom/index'
             },
             {
-              text: '@fe-utils/core',
+              text: '@lutlelk/core',
               link: '/en/packages/core/index'
             },
             {
-              text: '@fe-utils/async',
+              text: '@lutlelk/async',
               link: '/en/packages/async/index'
             }
           ]
@@ -150,7 +150,7 @@ export default defineConfig({
 
         footer: {
           message: 'Released under the MIT License',
-          copyright: 'Copyright © 2024-present fe-utils'
+          copyright: 'Copyright © 2024-present lutlelk'
         },
 
         search: {

@@ -1,15 +1,15 @@
-# @fe-utils/string
+# @lutlelk/string
 
 A comprehensive string utility library for TypeScript/JavaScript with validation, transformation, formatting, encoding, and generation capabilities.
 
 ## Installation
 
 ```bash
-npm install @fe-utils/string
+npm install @lutlelk/string
 # or
-pnpm add @fe-utils/string
+pnpm add @lutlelk/string
 # or
-yarn add @fe-utils/string
+yarn add @lutlelk/string
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @fe-utils/string
 ### Import the entire package
 
 ```typescript
-import { toCamelCase, slugify, isEmail, mask } from '@fe-utils/string'
+import { toCamelCase, slugify, isEmail, mask } from '@lutlelk/string'
 
 toCamelCase('hello-world') // => "helloWorld"
 slugify('Hello World!') // => "hello-world"
@@ -27,7 +27,7 @@ isEmail('test@example.com') // => true
 ### Import specific functions (tree-shaking supported)
 
 ```typescript
-import { toKebabCase, capitalize, generateUUID } from '@fe-utils/string'
+import { toKebabCase, capitalize, generateUUID } from '@lutlelk/string'
 
 toKebabCase('helloWorld') // => "hello-world"
 capitalize('hello') // => "Hello"

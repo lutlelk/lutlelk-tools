@@ -1,17 +1,17 @@
-# @fe-utils/async
+# @lutlelk/async
 
 异步操作工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @fe-utils/async
+pnpm add @lutlelk/async
 ```
 
 ## 使用
 
 ```ts
-import { debounce, throttle, concurrency } from '@fe-utils/async'
+import { debounce, throttle, concurrency } from '@lutlelk/async'
 ```
 
 ## API
@@ -92,7 +92,7 @@ const results = await concurrency(tasks, 2) // 最多同时执行 2 个任务
 #### 搜索输入防抖
 
 ```ts
-import { debounce } from '@fe-utils/async'
+import { debounce } from '@lutlelk/async'
 
 const handleSearch = debounce(async (keyword: string) => {
   const results = await searchAPI(keyword)
@@ -107,7 +107,7 @@ searchInput.addEventListener('input', (e) => {
 #### 滚动事件节流
 
 ```ts
-import { throttle } from '@fe-utils/async'
+import { throttle } from '@lutlelk/async'
 
 const handleScroll = throttle(async () => {
   const moreData = await loadMoreData()
@@ -120,7 +120,7 @@ window.addEventListener('scroll', handleScroll)
 #### 批量请求并发控制
 
 ```ts
-import { concurrency } from '@fe-utils/async'
+import { concurrency } from '@lutlelk/async'
 
 const urls = Array.from({ length: 100 }, (_, i) => `https://api.example.com/${i}`)
 

@@ -1,24 +1,24 @@
-# @fe-utils/function
+# @lutlelk/function
 
 A comprehensive function utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @fe-utils/function
+npm install @lutlelk/function
 # or
-pnpm add @fe-utils/function
+pnpm add @lutlelk/function
 # or
-yarn add @fe-utils/function
+yarn add @lutlelk/function
 ```
 
 ## Usage
 
 ```typescript
-import { debounce, throttle, memoize, curry, compose } from '@fe-utils/function'
+import { debounce, throttle, memoize, curry, compose } from '@lutlelk/function'
 
 // Or import single function for tree-shaking
-import debounce from '@fe-utils/function/debounce'
+import debounce from '@lutlelk/function/debounce'
 ```
 
 ## API

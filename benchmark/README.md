@@ -1,6 +1,6 @@
 # Benchmark
 
-This directory contains performance benchmarks comparing fe-utils with lodash and other popular utility libraries.
+This directory contains performance benchmarks comparing lutlelk with lodash and other popular utility libraries.
 
 ## Running Benchmarks
 
@@ -31,7 +31,7 @@ npx tsx benchmark/number/number.bench.ts
 
 ## Benchmark Results
 
-The benchmarks compare fe-utils with lodash on various operations:
+The benchmarks compare lutlelk with lodash on various operations:
 
 ### Array Operations
 - `chunk`: Split array into chunks
@@ -59,13 +59,13 @@ The benchmarks compare fe-utils with lodash on various operations:
 
 ## Expected Results
 
-fe-utils is designed to be:
+lutlelk is designed to be:
 - **Lightweight**: Smaller bundle size
 - **Fast**: Optimized for common use cases
 - **Tree-shakeable**: Only bundle what you use
 - **Type-safe**: Full TypeScript support
 
-While lodash provides a comprehensive API with many edge cases handled, fe-utils focuses on:
+While lodash provides a comprehensive API with many edge cases handled, lutlelk focuses on:
 - Simpler, more focused implementations
 - Better tree-shaking support
 - Smaller bundle sizes
@@ -84,13 +84,13 @@ Example:
 
 ```typescript
 import Benchmark from 'benchmark'
-import { myFunction } from '@fe-utils/my-package'
+import { myFunction } from '@lutlelk/my-package'
 import { myFunction as lodashFunction } from 'lodash'
 
 const suite = new Benchmark.Suite()
 
 suite
-  .add('@fe-utils/myFunction', function () {
+  .add('@lutlelk/myFunction', function () {
     myFunction(testData)
   })
   .add('lodash/myFunction', function () {

@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: fe-utils
+  name: lutlelk
   text: 轻量级 JavaScript 工具库
   tagline: 提供常用的工具函数集合
   actions:
@@ -11,7 +11,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: GitHub
-      link: https://github.com/yourusername/fe-utils
+      link: https://github.com/yourusername/lutlelk
 
 features:
   - title: 轻量级
@@ -32,10 +32,10 @@ features:
 
 ```bash
 # 安装单个包
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 
 # 安装多个包
-pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
+pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
 ```
 
 ## 使用示例
@@ -43,7 +43,7 @@ pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
 ### 常规导入
 
 ```ts
-import { chunk } from '@fe-utils/array'
+import { chunk } from '@lutlelk/array'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -52,7 +52,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### 单文件按需导入
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -61,7 +61,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### CDN 使用
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 <script>
   const result = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
   console.log(result) // [[1, 2], [3, 4], [5]]

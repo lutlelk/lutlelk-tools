@@ -1,4 +1,4 @@
-# fe-utils
+# lutlelk
 
 一个轻量级、高性能的 JavaScript 工具库，提供常用的工具函数集合。
 
@@ -16,19 +16,19 @@
 
 | 包名 | 描述 | 体积 (gzipped) |
 |------|------|----------------|
-| `@fe-utils/array` | 数组操作工具函数 | ~1.5 KB |
-| `@fe-utils/string` | 字符串处理工具函数 | ~4 KB |
-| `@fe-utils/object` | 对象操作工具函数 | ~4 KB |
-| `@fe-utils/function` | 函数操作工具函数 | ~4 KB |
-| `@fe-utils/number` | 数字处理工具函数 | ~4 KB |
-| `@fe-utils/date` | 日期时间处理工具函数 | ~1.5 KB |
-| `@fe-utils/dom` | DOM 操作工具函数 | ~4 KB |
-| `@fe-utils/async` | 异步操作工具函数 | ~1.5 KB |
-| `@fe-utils/core` | 核心工具函数 | ~1 KB |
+| `@lutlelk/array` | 数组操作工具函数 | ~1.5 KB |
+| `@lutlelk/string` | 字符串处理工具函数 | ~4 KB |
+| `@lutlelk/object` | 对象操作工具函数 | ~4 KB |
+| `@lutlelk/function` | 函数操作工具函数 | ~4 KB |
+| `@lutlelk/number` | 数字处理工具函数 | ~4 KB |
+| `@lutlelk/date` | 日期时间处理工具函数 | ~1.5 KB |
+| `@lutlelk/dom` | DOM 操作工具函数 | ~4 KB |
+| `@lutlelk/async` | 异步操作工具函数 | ~1.5 KB |
+| `@lutlelk/core` | 核心工具函数 | ~1 KB |
 
 ## 性能对比
 
-fe-utils 在大多数常用操作上都比 lodash 更快：
+lutlelk 在大多数常用操作上都比 lodash 更快：
 
 ### 关键性能提升
 
@@ -45,10 +45,10 @@ fe-utils 在大多数常用操作上都比 lodash 更快：
 
 ```bash
 # 安装单个包
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 
 # 安装多个包
-pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
+pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
 ```
 
 ## 使用
@@ -56,7 +56,7 @@ pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
 ### 常规导入
 
 ```ts
-import { chunk } from '@fe-utils/array'
+import { chunk } from '@lutlelk/array'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -65,7 +65,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### 单文件按需导入
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -74,7 +74,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### CDN 使用
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 <script>
   const result = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
   console.log(result) // [[1, 2], [3, 4], [5]]
@@ -93,8 +93,8 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### 克隆仓库
 
 ```bash
-git clone https://github.com/yourusername/fe-utils.git
-cd fe-utils
+git clone https://github.com/yourusername/lutlelk.git
+cd lutlelk
 ```
 
 ### 安装依赖
@@ -133,11 +133,11 @@ pnpm benchmark
 pnpm docs:dev
 ```
 
-## 为什么选择 fe-utils？
+## 为什么选择 lutlelk？
 
 ### 1. 性能优越
 
-在大多数常用操作上，fe-utils 的性能显著优于 lodash：
+在大多数常用操作上，lutlelk 的性能显著优于 lodash：
 
 - 对象操作平均快 **5.27 倍**
 - 函数操作平均快 **14.34 倍**
@@ -149,11 +149,11 @@ pnpm docs:dev
 单个包的体积远小于 lodash：
 
 - lodash: ~70 KB (gzipped)
-- @fe-utils/array: ~1.5 KB (gzipped)
-- @fe-utils/string: ~4 KB (gzipped)
-- @fe-utils/object: ~4 KB (gzipped)
+- @lutlelk/array: ~1.5 KB (gzipped)
+- @lutlelk/string: ~4 KB (gzipped)
+- @lutlelk/object: ~4 KB (gzipped)
 
-按需使用时，fe-utils 的优势更加明显。
+按需使用时，lutlelk 的优势更加明显。
 
 ### 3. 更好的 Tree-shaking
 

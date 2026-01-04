@@ -173,7 +173,7 @@ A: npm 不支持删除已发布的版本，但可以：
 A: 在 `.changeset/config.json` 的 `ignore` 数组中添加包名：
 ```json
 {
-  "ignore": ["@fe-utils/core"]
+  "ignore": ["@lutlelk/core"]
 }
 ```
 

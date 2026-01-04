@@ -2,13 +2,13 @@
 
 ## Single File On-Demand Import
 
-fe-utils supports importing by function path for more granular on-demand loading and tree-shaking.
+lutlelk supports importing by function path for more granular on-demand loading and tree-shaking.
 
 ### Basic Usage
 
 ```ts
 // Import a single function directly
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -17,11 +17,11 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### Multiple Function Imports
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
-import toCamelCase from '@fe-utils/string/toCamelCase'
-import deepClone from '@fe-utils/object/deepClone'
-import debounce from '@fe-utils/function/debounce'
-import isPrime from '@fe-utils/number/isPrime'
+import chunk from '@lutlelk/array/chunk'
+import toCamelCase from '@lutlelk/string/toCamelCase'
+import deepClone from '@lutlelk/object/deepClone'
+import debounce from '@lutlelk/function/debounce'
+import isPrime from '@lutlelk/number/isPrime'
 ```
 
 ### Advantages
@@ -36,7 +36,7 @@ import isPrime from '@fe-utils/number/isPrime'
 #### Regular Import
 
 ```ts
-import { chunk, flatten, uniq } from '@fe-utils/array'
+import { chunk, flatten, uniq } from '@lutlelk/array'
 
 // Even if only using chunk, build tools might include the entire package
 const result = chunk([1, 2, 3, 4, 5], 2)
@@ -45,7 +45,7 @@ const result = chunk([1, 2, 3, 4, 5], 2)
 #### Single File On-Demand Import
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 
 // Only bundle chunk function, exclude other functions
 const result = chunk([1, 2, 3, 4, 5], 2)
@@ -53,74 +53,74 @@ const result = chunk([1, 2, 3, 4, 5], 2)
 
 ### Available Single File Imports
 
-#### @fe-utils/array
+#### @lutlelk/array
 
 ```ts
-import chunk from '@fe-utils/array/chunk'
-import flatten from '@fe-utils/array/flatten'
-import uniq from '@fe-utils/array/uniq'
-import groupBy from '@fe-utils/array/groupBy'
-import sortBy from '@fe-utils/array/sortBy'
-import find from '@fe-utils/array/find'
-import map from '@fe-utils/array/map'
-import filter from '@fe-utils/array/filter'
-import reduce from '@fe-utils/array/reduce'
+import chunk from '@lutlelk/array/chunk'
+import flatten from '@lutlelk/array/flatten'
+import uniq from '@lutlelk/array/uniq'
+import groupBy from '@lutlelk/array/groupBy'
+import sortBy from '@lutlelk/array/sortBy'
+import find from '@lutlelk/array/find'
+import map from '@lutlelk/array/map'
+import filter from '@lutlelk/array/filter'
+import reduce from '@lutlelk/array/reduce'
 ```
 
-#### @fe-utils/string
+#### @lutlelk/string
 
 ```ts
-import toCamelCase from '@fe-utils/string/toCamelCase'
-import toKebabCase from '@fe-utils/string/toKebabCase'
-import toSnakeCase from '@fe-utils/string/toSnakeCase'
-import slugify from '@fe-utils/string/slugify'
-import capitalize from '@fe-utils/string/capitalize'
-import truncate from '@fe-utils/string/truncate'
-import isEmail from '@fe-utils/string/isEmail'
-import isUrl from '@fe-utils/string/isUrl'
+import toCamelCase from '@lutlelk/string/toCamelCase'
+import toKebabCase from '@lutlelk/string/toKebabCase'
+import toSnakeCase from '@lutlelk/string/toSnakeCase'
+import slugify from '@lutlelk/string/slugify'
+import capitalize from '@lutlelk/string/capitalize'
+import truncate from '@lutlelk/string/truncate'
+import isEmail from '@lutlelk/string/isEmail'
+import isUrl from '@lutlelk/string/isUrl'
 ```
 
-#### @fe-utils/object
+#### @lutlelk/object
 
 ```ts
-import get from '@fe-utils/object/get'
-import set from '@fe-utils/object/set'
-import pick from '@fe-utils/object/pick'
-import omit from '@fe-utils/object/omit'
-import merge from '@fe-utils/object/merge'
-import deepMerge from '@fe-utils/object/deepMerge'
-import clone from '@fe-utils/object/clone'
-import deepClone from '@fe-utils/object/deepClone'
+import get from '@lutlelk/object/get'
+import set from '@lutlelk/object/set'
+import pick from '@lutlelk/object/pick'
+import omit from '@lutlelk/object/omit'
+import merge from '@lutlelk/object/merge'
+import deepMerge from '@lutlelk/object/deepMerge'
+import clone from '@lutlelk/object/clone'
+import deepClone from '@lutlelk/object/deepClone'
 ```
 
-#### @fe-utils/function
+#### @lutlelk/function
 
 ```ts
-import debounce from '@fe-utils/function/debounce'
-import throttle from '@fe-utils/function/throttle'
-import memoize from '@fe-utils/function/memoize'
-import once from '@fe-utils/function/once'
-import curry from '@fe-utils/function/curry'
-import partial from '@fe-utils/function/partial'
-import compose from '@fe-utils/function/compose'
+import debounce from '@lutlelk/function/debounce'
+import throttle from '@lutlelk/function/throttle'
+import memoize from '@lutlelk/function/memoize'
+import once from '@lutlelk/function/once'
+import curry from '@lutlelk/function/curry'
+import partial from '@lutlelk/function/partial'
+import compose from '@lutlelk/function/compose'
 ```
 
-#### @fe-utils/number
+#### @lutlelk/number
 
 ```ts
-import clamp from '@fe-utils/number/clamp'
-import random from '@fe-utils/number/random'
-import randomInt from '@fe-utils/number/randomInt'
-import range from '@fe-utils/number/range'
-import round from '@fe-utils/number/round'
-import format from '@fe-utils/number/format'
-import toCurrency from '@fe-utils/number/toCurrency'
-import toBytes from '@fe-utils/number/toBytes'
+import clamp from '@lutlelk/number/clamp'
+import random from '@lutlelk/number/random'
+import randomInt from '@lutlelk/number/randomInt'
+import range from '@lutlelk/number/range'
+import round from '@lutlelk/number/round'
+import format from '@lutlelk/number/format'
+import toCurrency from '@lutlelk/number/toCurrency'
+import toBytes from '@lutlelk/number/toBytes'
 ```
 
 ## CDN Usage
 
-fe-utils provides IIFE format build files for direct browser usage via CDN.
+lutlelk provides IIFE format build files for direct browser usage via CDN.
 
 ### Basic Usage
 
@@ -128,12 +128,12 @@ fe-utils provides IIFE format build files for direct browser usage via CDN.
 <!DOCTYPE html>
 <html>
 <head>
-  <title>fe-utils CDN Example</title>
+  <title>lutlelk CDN Example</title>
 </head>
 <body>
   <!-- Import required packages -->
-  <script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fe-utils/string@latest/dist/string.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js"></script>
 
   <script>
     // Use global variables
@@ -152,37 +152,37 @@ fe-utils provides IIFE format build files for direct browser usage via CDN.
 #### jsDelivr
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 ```
 
 #### unpkg
 
 ```html
-<script src="https://unpkg.com/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://unpkg.com/@lutlelk/array@latest/dist/array.iife.js"></script>
 ```
 
 ### Available CDN Packages
 
 | Package | jsDelivr | unpkg | Global Variable |
 |---------|----------|-------|-----------------|
-| @fe-utils/array | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js) | [Link](https://unpkg.com/@fe-utils/array@latest/dist/array.iife.js) | `window.feUtilsArray` |
-| @fe-utils/string | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/string@latest/dist/string.iife.js) | [Link](https://unpkg.com/@fe-utils/string@latest/dist/string.iife.js) | `window.feUtilsString` |
-| @fe-utils/object | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/object@latest/dist/object.iife.js) | [Link](https://unpkg.com/@fe-utils/object@latest/dist/object.iife.js) | `window.feUtilsObject` |
-| @fe-utils/function | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/function@latest/dist/function.iife.js) | [Link](https://unpkg.com/@fe-utils/function@latest/dist/function.iife.js) | `window.feUtilsFunction` |
-| @fe-utils/number | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/number@latest/dist/number.iife.js) | [Link](https://unpkg.com/@fe-utils/number@latest/dist/number.iife.js) | `window.feUtilsNumber` |
-| @fe-utils/date | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/date@latest/dist/date.iife.js) | [Link](https://unpkg.com/@fe-utils/date@latest/dist/date.iife.js) | `window.feUtilsDate` |
-| @fe-utils/dom | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/dom@latest/dist/dom.iife.js) | [Link](https://unpkg.com/@fe-utils/dom@latest/dist/dom.iife.js) | `window.feUtilsDom` |
-| @fe-utils/async | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/async@latest/dist/async.iife.js) | [Link](https://unpkg.com/@fe-utils/async@latest/dist/async.iife.js) | `window.feUtilsAsync` |
-| @fe-utils/core | [Link](https://cdn.jsdelivr.net/npm/@fe-utils/core@latest/dist/core.iife.js) | [Link](https://unpkg.com/@fe-utils/core@latest/dist/core.iife.js) | `window.feUtilsCore` |
+| @lutlelk/array | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js) | [Link](https://unpkg.com/@lutlelk/array@latest/dist/array.iife.js) | `window.feUtilsArray` |
+| @lutlelk/string | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js) | [Link](https://unpkg.com/@lutlelk/string@latest/dist/string.iife.js) | `window.feUtilsString` |
+| @lutlelk/object | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/object@latest/dist/object.iife.js) | [Link](https://unpkg.com/@lutlelk/object@latest/dist/object.iife.js) | `window.feUtilsObject` |
+| @lutlelk/function | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/function@latest/dist/function.iife.js) | [Link](https://unpkg.com/@lutlelk/function@latest/dist/function.iife.js) | `window.feUtilsFunction` |
+| @lutlelk/number | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/number@latest/dist/number.iife.js) | [Link](https://unpkg.com/@lutlelk/number@latest/dist/number.iife.js) | `window.feUtilsNumber` |
+| @lutlelk/date | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/date@latest/dist/date.iife.js) | [Link](https://unpkg.com/@lutlelk/date@latest/dist/date.iife.js) | `window.feUtilsDate` |
+| @lutlelk/dom | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/dom@latest/dist/dom.iife.js) | [Link](https://unpkg.com/@lutlelk/dom@latest/dist/dom.iife.js) | `window.feUtilsDom` |
+| @lutlelk/async | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/async@latest/dist/async.iife.js) | [Link](https://unpkg.com/@lutlelk/async@latest/dist/async.iife.js) | `window.feUtilsAsync` |
+| @lutlelk/core | [Link](https://cdn.jsdelivr.net/npm/@lutlelk/core@latest/dist/core.iife.js) | [Link](https://unpkg.com/@lutlelk/core@latest/dist/core.iife.js) | `window.feUtilsCore` |
 
 ### Specify Version
 
 ```html
 <!-- Use specific version -->
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@1.0.0/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@1.0.0/dist/array.iife.js"></script>
 
 <!-- Use latest version -->
-<script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
 ```
 
 ### Advantages of Using CDN

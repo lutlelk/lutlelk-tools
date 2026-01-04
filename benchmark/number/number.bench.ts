@@ -1,5 +1,5 @@
 import Benchmark from 'benchmark'
-import { clamp, random, range } from '@fe-utils/number'
+import { clamp, random, range } from '@lutlelk/number'
 import { clamp as lodashClamp, random as lodashRandom, range as lodashRange } from 'lodash'
 
 const suite = new Benchmark.Suite()
@@ -7,7 +7,7 @@ const suite = new Benchmark.Suite()
 console.log('--- clamp ---\n')
 
 suite
-  .add('@fe-utils/number/clamp', function () {
+  .add('@lutlelk/number/clamp', function () {
     clamp(50, 0, 100)
   })
   .add('lodash/clamp', function () {
@@ -26,7 +26,7 @@ console.log('\n--- random ---\n')
 const suite2 = new Benchmark.Suite()
 
 suite2
-  .add('@fe-utils/number/random', function () {
+  .add('@lutlelk/number/random', function () {
     random(0, 100)
   })
   .add('lodash/random', function () {
@@ -45,7 +45,7 @@ console.log('\n--- range ---\n')
 const suite3 = new Benchmark.Suite()
 
 suite3
-  .add('@fe-utils/number/range', function () {
+  .add('@lutlelk/number/range', function () {
     range(0, 1000)
   })
   .add('lodash/range', function () {

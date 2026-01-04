@@ -1,21 +1,21 @@
-# @fe-utils/dom
+# @lutlelk/dom
 
 A lightweight DOM manipulation utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @fe-utils/dom
+npm install @lutlelk/dom
 # or
-pnpm add @fe-utils/dom
+pnpm add @lutlelk/dom
 # or
-yarn add @fe-utils/dom
+yarn add @lutlelk/dom
 ```
 
 ## Usage
 
 ```typescript
-import { $, $$, addClass, on, createElement } from '@fe-utils/dom'
+import { $, $$, addClass, on, createElement } from '@lutlelk/dom'
 ```
 
 ## API

@@ -1,17 +1,17 @@
-# @fe-utils/array
+# @lutlelk/array
 
 Collection of array manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 ```
 
 ## Usage
 
 ```ts
-import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@fe-utils/array'
+import { chunk, flatten, uniq, groupBy, sort, find, filter, map, reduce } from '@lutlelk/array'
 ```
 
 ## API

@@ -1,11 +1,11 @@
-# @fe-utils/number
+# @lutlelk/number
 
 数字处理工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @fe-utils/number
+pnpm add @lutlelk/number
 ```
 
 ## 使用
@@ -21,7 +21,7 @@ import {
   average,
   toCurrency,
   toBytes
-} from '@fe-utils/number'
+} from '@lutlelk/number'
 ```
 
 ## API

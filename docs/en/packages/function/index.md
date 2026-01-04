@@ -1,17 +1,17 @@
-# @fe-utils/function
+# @lutlelk/function
 
 Collection of function manipulation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/function
+pnpm add @lutlelk/function
 ```
 
 ## Usage
 
 ```ts
-import { debounce, throttle, memoize, once, curry, partial, compose } from '@fe-utils/function'
+import { debounce, throttle, memoize, once, curry, partial, compose } from '@lutlelk/function'
 ```
 
 ## API

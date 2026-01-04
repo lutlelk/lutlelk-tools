@@ -5,13 +5,13 @@
 使用 pnpm 安装单个包：
 
 ```bash
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 ```
 
 安装多个包：
 
 ```bash
-pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
+pnpm add @lutlelk/array @lutlelk/string @lutlelk/object
 ```
 
 ## 使用
@@ -19,7 +19,7 @@ pnpm add @fe-utils/array @fe-utils/string @fe-utils/object
 ### ESM 方式
 
 ```ts
-import { chunk } from '@fe-utils/array'
+import { chunk } from '@lutlelk/array'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -28,7 +28,7 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 ### CommonJS 方式
 
 ```js
-const { chunk } = require('@fe-utils/array')
+const { chunk } = require('@lutlelk/array')
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -36,11 +36,11 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 
 ### 单文件按需导入
 
-fe-utils 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking：
+lutlelk 支持按函数路径导入，实现更细粒度的按需加载和 tree-shaking：
 
 ```ts
 // 直接导入单个函数
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 
 const result = chunk([1, 2, 3, 4, 5], 2)
 console.log(result) // [[1, 2], [3, 4], [5]]
@@ -54,25 +54,25 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 所有包都支持单文件按需导入，例如：
 
 ```ts
-import toCamelCase from '@fe-utils/string/toCamelCase'
-import deepClone from '@fe-utils/object/deepClone'
-import debounce from '@fe-utils/function/debounce'
-import isPrime from '@fe-utils/number/isPrime'
+import toCamelCase from '@lutlelk/string/toCamelCase'
+import deepClone from '@lutlelk/object/deepClone'
+import debounce from '@lutlelk/function/debounce'
+import isPrime from '@lutlelk/number/isPrime'
 ```
 
 ### CDN 使用
 
-fe-utils 支持 CDN 方式引入，适合在浏览器中直接使用：
+lutlelk 支持 CDN 方式引入，适合在浏览器中直接使用：
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>fe-utils CDN Example</title>
+  <title>lutlelk CDN Example</title>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/@fe-utils/array@latest/dist/array.iife.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fe-utils/string@latest/dist/string.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/array@latest/dist/array.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@lutlelk/string@latest/dist/string.iife.js"></script>
   <script>
     // 使用全局变量
     const result = window.feUtilsArray.chunk([1, 2, 3, 4, 5], 2)
@@ -89,15 +89,15 @@ fe-utils 支持 CDN 方式引入，适合在浏览器中直接使用：
 
 | 包名 | CDN 链接 | 全局变量名 |
 |------|----------|-----------|
-| @fe-utils/array | `@fe-utils/array/dist/array.iife.js` | `window.feUtilsArray` |
-| @fe-utils/string | `@fe-utils/string/dist/string.iife.js` | `window.feUtilsString` |
-| @fe-utils/object | `@fe-utils/object/dist/object.iife.js` | `window.feUtilsObject` |
-| @fe-utils/function | `@fe-utils/function/dist/function.iife.js` | `window.feUtilsFunction` |
-| @fe-utils/number | `@fe-utils/number/dist/number.iife.js` | `window.feUtilsNumber` |
-| @fe-utils/date | `@fe-utils/date/dist/date.iife.js` | `window.feUtilsDate` |
-| @fe-utils/dom | `@fe-utils/dom/dist/dom.iife.js` | `window.feUtilsDom` |
-| @fe-utils/async | `@fe-utils/async/dist/async.iife.js` | `window.feUtilsAsync` |
-| @fe-utils/core | `@fe-utils/core/dist/core.iife.js` | `window.feUtilsCore` |
+| @lutlelk/array | `@lutlelk/array/dist/array.iife.js` | `window.feUtilsArray` |
+| @lutlelk/string | `@lutlelk/string/dist/string.iife.js` | `window.feUtilsString` |
+| @lutlelk/object | `@lutlelk/object/dist/object.iife.js` | `window.feUtilsObject` |
+| @lutlelk/function | `@lutlelk/function/dist/function.iife.js` | `window.feUtilsFunction` |
+| @lutlelk/number | `@lutlelk/number/dist/number.iife.js` | `window.feUtilsNumber` |
+| @lutlelk/date | `@lutlelk/date/dist/date.iife.js` | `window.feUtilsDate` |
+| @lutlelk/dom | `@lutlelk/dom/dist/dom.iife.js` | `window.feUtilsDom` |
+| @lutlelk/async | `@lutlelk/async/dist/async.iife.js` | `window.feUtilsAsync` |
+| @lutlelk/core | `@lutlelk/core/dist/core.iife.js` | `window.feUtilsCore` |
 
 使用 CDN 的优势：
 - 无需构建工具，直接在浏览器中使用
@@ -109,8 +109,8 @@ fe-utils 支持 CDN 方式引入，适合在浏览器中直接使用：
 克隆仓库并安装依赖：
 
 ```bash
-git clone https://github.com/yourusername/fe-utils.git
-cd fe-utils
+git clone https://github.com/yourusername/lutlelk.git
+cd lutlelk
 pnpm install
 ```
 

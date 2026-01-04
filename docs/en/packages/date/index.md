@@ -1,11 +1,11 @@
-# @fe-utils/date
+# @lutlelk/date
 
 A lightweight JavaScript date processing utility library with simple and easy-to-use date manipulation APIs.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/date
+pnpm add @lutlelk/date
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ import {
   today,
   tomorrow,
   yesterday
-} from '@fe-utils/date'
+} from '@lutlelk/date'
 ```
 
 ## API

@@ -1,24 +1,24 @@
-# @fe-utils/array
+# @lutlelk/array
 
 A lightweight array manipulation utility library for JavaScript/TypeScript.
 
 ## Installation
 
 ```bash
-npm install @fe-utils/array
+npm install @lutlelk/array
 # or
-pnpm add @fe-utils/array
+pnpm add @lutlelk/array
 # or
-yarn add @fe-utils/array
+yarn add @lutlelk/array
 ```
 
 ## Usage
 
 ```typescript
-import { chunk, uniq, flatten, groupBy, sort, find, filter, map } from '@fe-utils/array'
+import { chunk, uniq, flatten, groupBy, sort, find, filter, map } from '@lutlelk/array'
 
 // Or import single function for tree-shaking
-import chunk from '@fe-utils/array/chunk'
+import chunk from '@lutlelk/array/chunk'
 ```
 
 ## API

@@ -1,11 +1,11 @@
-# @fe-utils/date
+# @lutlelk/date
 
 日期时间处理工具函数集合。
 
 ## 安装
 
 ```bash
-pnpm add @fe-utils/date
+pnpm add @lutlelk/date
 ```
 
 ## 使用
@@ -26,7 +26,7 @@ import {
   today,
   yesterday,
   tomorrow
-} from '@fe-utils/date'
+} from '@lutlelk/date'
 ```
 
 ## API
@@ -496,7 +496,7 @@ range(
 #### 计算倒计时
 
 ```ts
-import { diff, format } from '@fe-utils/date'
+import { diff, format } from '@lutlelk/date'
 
 const targetDate = new Date('2024-12-31')
 const now = new Date()
@@ -512,7 +512,7 @@ console.log(`距离目标日期还有 ${hours} 小时`)
 #### 格式化日期显示
 
 ```ts
-import { format } from '@fe-utils/date'
+import { format } from '@lutlelk/date'
 
 const date = new Date()
 
@@ -524,7 +524,7 @@ console.log(format(date, 'MM/DD/YYYY'))
 #### 计算年龄
 
 ```ts
-import { diff } from '@fe-utils/date'
+import { diff } from '@lutlelk/date'
 
 function calculateAge(birthDate: DateInput): number {
   return diff(new Date(), birthDate, 'year')
@@ -537,7 +537,7 @@ console.log(`年龄: ${age} 岁`)
 #### 日期范围查询
 
 ```ts
-import { startOf, endOf, isBetween } from '@fe-utils/date'
+import { startOf, endOf, isBetween } from '@lutlelk/date'
 
 const date = new Date('2024-01-15')
 const monthStart = startOf(date, 'month')

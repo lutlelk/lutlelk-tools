@@ -1,5 +1,5 @@
 {
-  "name": "@fe-utils/core",
+  "name": "@lutlelk/core",
   "version": "0.1.0",
   "private": false,
   "type": "module",
@@ -28,7 +28,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "Core utility functions and types used across all fe-utils packages",
+  "description": "Core utility functions and types used across all lutlelk packages",
   "keywords": [
     "core",
     "utils",

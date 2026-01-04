@@ -1,17 +1,17 @@
-# @fe-utils/async
+# @lutlelk/async
 
 Async operation utility functions.
 
 ## Installation
 
 ```bash
-pnpm add @fe-utils/async
+pnpm add @lutlelk/async
 ```
 
 ## Usage
 
 ```ts
-import { concurrency, debounce, throttle } from '@fe-utils/async'
+import { concurrency, debounce, throttle } from '@lutlelk/async'
 ```
 
 ## API
